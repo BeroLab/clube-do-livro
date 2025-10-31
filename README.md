@@ -6,7 +6,7 @@ Repositório oficial do Clube do Livro Técnico da Berolab! Este espaço é dedi
   <img src="assets/capa-clube-do-livro.png" alt="Logo do Clube do Livro" width="400"/>
 </p>
 
-### **Próxima Reunião:** `27/10/2025 às 19h - exercício do Capítulo 4 e leitura e discussão dos Capítulos 5 e 6`
+### **Próxima Reunião:** `03/11/2025 às 19h - Capítulo 7`
 
 ## 📚 Leitura Atual
 
