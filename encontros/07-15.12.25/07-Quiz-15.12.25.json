@@ -1,0 +1,116 @@
+{
+  "title": "Quizz: Entendendo Algoritmos - Capítulo 11",
+  "description": "Teste seus conhecimentos sobre Tópicos Avançados: Árvores, MapReduce e Estruturas Probabilísticas.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Qual a principal vantagem de uma Árvore Binária de Busca (BST) sobre um Array ordenado?",
+      "options": [
+        { "text": "Busca mais rápida", "justification": "Ambos são O(log n) para busca." },
+        { "text": "Inserções e deleções muito mais rápidas (O(log n))", "justification": "Correto! Em arrays, inserir/deletar exige deslocar todos os elementos (O(n))." },
+        { "text": "Usa menos memória", "justification": "Árvores geralmente usam mais memória por causa dos ponteiros." },
+        { "text": "É mais simples de implementar", "justification": "Arrays são mais simples." }
+      ],
+      "correctAnswer": "Inserções e deleções muito mais rápidas (O(log n))"
+    },
+    {
+      "id": 2,
+      "question": "O que são 'Índices Invertidos' (Inverted Indexes)?",
+      "options": [
+        { "text": "Um array lido de trás para frente", "justification": "Não." },
+        { "text": "Uma estrutura que mapeia palavras para os documentos onde elas aparecem", "justification": "Correto! É a base tecnológica de motores de busca como o Google." },
+        { "text": "Um algoritmo de ordenação decrescente", "justification": "Não." },
+        { "text": "Uma forma de inverter cores em imagens", "justification": "Nada a ver com busca de texto." }
+      ],
+      "correctAnswer": "Uma estrutura que mapeia palavras para os documentos onde elas aparecem"
+    },
+    {
+      "id": 3,
+      "question": "Para que serve a 'Transformada de Fourier'?",
+      "options": [
+        { "text": "Para encontrar o caminho mais curto", "justification": "Isso é Dijkstra." },
+        { "text": "Para decompor sinais (como áudio ou imagem) em suas frequências constituintes", "justification": "Correto! Usada em compressão de MP3, JPEG e reconhecimento de música." },
+        { "text": "Para prever o preço de ações", "justification": "Existem outros algoritmos melhores para isso." },
+        { "text": "Para ordenar strings", "justification": "Não." }
+      ],
+      "correctAnswer": "Para decompor sinais (como áudio ou imagem) em suas frequências constituintes"
+    },
+    {
+      "id": 4,
+      "question": "O que é o MapReduce no contexto de algoritmos paralelos?",
+      "options": [
+        { "text": "Um tipo de mapa geográfico", "justification": "Não." },
+        { "text": "Um modelo de programação para processar grandes volumes de dados distribuídos em vários computadores", "justification": "Correto! Ele divide o trabalho (Map) e depois consolida o resultado (Reduce)." },
+        { "text": "Um comando para reduzir o tamanho de imagens", "justification": "Não." },
+        { "text": "Um algoritmo de criptografia", "justification": "Não." }
+      ],
+      "correctAnswer": "Um modelo de programação para processar grandes volumes de dados distribuídos em vários computadores"
+    },
+    {
+      "id": 5,
+      "question": "Qual a principal característica de um Filtro de Bloom?",
+      "options": [
+        { "text": "Ele nunca erra", "justification": "É uma estrutura probabilística." },
+        { "text": "Ele pode dar falsos positivos, mas nunca falsos negativos", "justification": "Correto! Ele diz se um item PROVAVELMENTE está no conjunto ou se CERTAMENTE NÃO está." },
+        { "text": "Ele armazena todos os itens por extenso", "justification": "Não, ele economiza espaço não armazenando o item real." },
+        { "text": "Ele é usado apenas para flores", "justification": "Piada com o nome (Bloom)." }
+      ],
+      "correctAnswer": "Ele pode dar falsos positivos, mas nunca falsos negativos"
+    },
+    {
+      "id": 6,
+      "question": "O algoritmo HyperLogLog é ideal para qual tarefa?",
+      "options": [
+        { "text": "Contar exatamente quantos usuários existem", "justification": "Ele fornece uma estimativa." },
+        { "text": "Estimar o número de elementos únicos em conjuntos de dados massivos usando pouca memória", "justification": "Correto! É extremamente eficiente para Big Data." },
+        { "text": "Criptografar mensagens", "justification": "Não." },
+        { "text": "Compactar arquivos ZIP", "justification": "Não." }
+      ],
+      "correctAnswer": "Estimar o número de elementos únicos em conjuntos de dados massivos usando pouca memória"
+    },
+    {
+      "id": 7,
+      "question": "Qual o principal benefício das B-Trees em bancos de dados?",
+      "options": [
+        { "text": "São coloridas", "justification": "Não." },
+        { "text": "Mantêm os dados ordenados e permitem buscas, acessos sequenciais, inserções e remoções em tempo logarítmico", "justification": "Correto! São otimizadas para sistemas que leem e escrevem grandes blocos de dados." },
+        { "text": "São mais simples que listas encadeadas", "justification": "São muito mais complexas." },
+        { "text": "Não usam memória", "justification": "Falso." }
+      ],
+      "correctAnswer": "Mantêm os dados ordenados e permitem buscas, acessos sequenciais, inserções e remoções em tempo logarítmico"
+    },
+    {
+      "id": 8,
+      "question": "No MapReduce, qual é a função da etapa 'Reduce'?",
+      "options": [
+        { "text": "Diminuir o brilho da tela", "justification": "Não." },
+        { "text": "Consolidar e processar os resultados parciais gerados pela etapa Map", "justification": "Correto! Ele agrega os dados para gerar o resultado final." },
+        { "text": "Dividir o arquivo em pedaços menores", "justification": "Isso é parte do Map/Input split." },
+        { "text": "Apagar os dados originais", "justification": "Não." }
+      ],
+      "correctAnswer": "Consolidar e processar os resultados parciais gerados pela etapa Map"
+    },
+    {
+      "id": 9,
+      "question": "Por que usaríamos um Filtro de Bloom em vez de um Hash Map tradicional?",
+      "options": [
+        { "text": "Para ter 100% de certeza", "justification": "Filtros de Bloom erram (falsos positivos)." },
+        { "text": "Quando a economia de memória é crucial e podemos tolerar alguns falsos positivos", "justification": "Correto! Filtros de Bloom usam uma fração da memória de um Hash Map." },
+        { "text": "Porque é mais lento", "justification": "Geralmente é mais rápido, mas a memória é a vantagem principal." },
+        { "text": "Porque o Hash Map não funciona em servidores", "justification": "Funciona sim." }
+      ],
+      "correctAnswer": "Quando a economia de memória é crucial e podemos tolerar alguns falsos positivos"
+    },
+    {
+      "id": 10,
+      "question": "O que o autor quer dizer com 'O Que Vem a Seguir' no final do livro?",
+      "options": [
+        { "text": "Que o leitor já sabe tudo sobre algoritmos", "justification": "O autor diz que este é apenas o começo." },
+        { "text": "Que existem muitos outros algoritmos especializados e áreas para explorar", "justification": "Correto! O livro fornece a base, mas o campo é vasto." },
+        { "text": "Que o próximo livro será sobre culinária", "justification": "Não." },
+        { "text": "Que os algoritmos vão parar de funcionar em 2030", "justification": "Falso." }
+      ],
+      "correctAnswer": "Que existem muitos outros algoritmos especializados e áreas para explorar"
+    }
+  ]
+}

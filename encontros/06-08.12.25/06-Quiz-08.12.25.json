@@ -1,0 +1,116 @@
+{
+  "title": "Quizz: Entendendo Algoritmos - Capítulo 10",
+  "description": "Teste seus conhecimentos sobre k-Vizinhos Mais Próximos (KNN) e Aprendizado de Máquina.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Qual é o conceito fundamental por trás do algoritmo k-Vizinhos Mais Próximos (KNN)?",
+      "options": [
+        { "text": "Classificar itens baseando-se na similaridade com seus vizinhos mais próximos", "justification": "Correto! Se você é parecido com seus vizinhos, provavelmente pertence à mesma categoria." },
+        { "text": "Dividir um problema em subproblemas menores", "justification": "Isso é D&C." },
+        { "text": "Encontrar o caminho mais curto em um grafo", "justification": "Isso é Dijkstra/BFS." },
+        { "text": "Ordenar uma lista de nomes", "justification": "Isso é ordenação." }
+      ],
+      "correctAnswer": "Classificar itens baseando-se na similaridade com seus vizinhos mais próximos"
+    },
+    {
+      "id": 2,
+      "question": "O que o 'k' representa no nome do algoritmo KNN?",
+      "options": [
+        { "text": "A distância máxima permitida", "justification": "Não." },
+        { "text": "O número de vizinhos que serão consultados para tomar a decisão", "justification": "Correto! Se k=5, olhamos para os 5 vizinhos mais próximos." },
+        { "text": "O número de categorias existentes", "justification": "Não." },
+        { "text": "A velocidade do algoritmo", "justification": "Não." }
+      ],
+      "correctAnswer": "O número de vizinhos que serão consultados para tomar a decisão"
+    },
+    {
+      "id": 3,
+      "question": "O que é 'Extração de Características' (Feature Extraction)?",
+      "options": [
+        { "text": "Remover dados inúteis do banco de dados", "justification": "Não." },
+        { "text": "Transformar qualidades ou itens em números para que possam ser comparados", "justification": "Correto! Convertemos atributos (como gosto por filmes) em coordenadas numéricas." },
+        { "text": "Extrair o DNA de um ser vivo", "justification": "Fora de contexto." },
+        { "text": "Aumentar o tamanho de uma imagem", "justification": "Não." }
+      ],
+      "correctAnswer": "Transformar qualidades ou itens em números para que possam ser comparados"
+    },
+    {
+      "id": 4,
+      "question": "Qual fórmula é comumente usada para calcular a distância entre dois pontos no KNN?",
+      "options": [
+        { "text": "Fórmula de Bhaskara", "justification": "Para equações de 2º grau." },
+        { "text": "Fórmula de Pitágoras (Distância Euclidiana)", "justification": "Correto! Mede a distância 'em linha reta' entre dois pontos em um espaço multidimensional." },
+        { "text": "Lei dos Senos", "justification": "Trigonometria." },
+        { "text": "Média Aritmética", "justification": "Não mede distância." }
+      ],
+      "correctAnswer": "Fórmula de Pitágoras (Distância Euclidiana)"
+    },
+    {
+      "id": 5,
+      "question": "Qual a diferença entre Classificação e Regressão no contexto do KNN?",
+      "options": [
+        { "text": "Classificação prevê um número; Regressão prevê uma categoria", "justification": "Invertido." },
+        { "text": "Classificação prevê uma categoria; Regressão prevê um número", "justification": "Correto! Ex: Spam vs Não Spam (Classificação) e Preço de uma casa (Regressão)." },
+        { "text": "Não há diferença", "justification": "São tarefas distintas." },
+        { "text": "Regressão é apenas para erros", "justification": "Não." }
+      ],
+      "correctAnswer": "Classificação prevê uma categoria; Regressão prevê um número"
+    },
+    {
+      "id": 6,
+      "question": "Por que geralmente se escolhe um número ímpar para o valor de 'k'?",
+      "options": [
+        { "text": "Porque números ímpares são mais rápidos", "justification": "Não influencia a velocidade." },
+        { "text": "Para evitar empates na hora da votação entre categorias", "justification": "Correto! Com um número ímpar, sempre haverá uma maioria clara." },
+        { "text": "Por superstição matemática", "justification": "Não." },
+        { "text": "Porque o algoritmo só funciona com números ímpares", "justification": "Funciona com pares, mas é menos robusto contra empates." }
+      ],
+      "correctAnswer": "Para evitar empates na hora da votação entre categorias"
+    },
+    {
+      "id": 7,
+      "question": "KNN é a porta de entrada para qual área da computação?",
+      "options": [
+        { "text": "Desenvolvimento Web Frontend", "justification": "Não." },
+        { "text": "Aprendizado de Máquina (Machine Learning)", "justification": "Correto! É um dos algoritmos de aprendizado supervisionado mais simples e poderosos." },
+        { "text": "Segurança de Redes", "justification": "Não diretamente." },
+        { "text": "Sistemas Operacionais", "justification": "Não." }
+      ],
+      "correctAnswer": "Aprendizado de Máquina (Machine Learning)"
+    },
+    {
+      "id": 8,
+      "question": "Ao criar um sistema de recomendação de filmes, o que seriam as 'características' (features)?",
+      "options": [
+        { "text": "O nome dos atores", "justification": "Pode ser, mas as notas em gêneros (Ação, Comédia) são mais comuns para cálculo de distância." },
+        { "text": "As avaliações (notas) que os usuários dão para diferentes gêneros", "justification": "Correto! Essas notas permitem posicionar os usuários em um gráfico e ver quem é 'vizinho' de quem." },
+        { "text": "O preço do ingresso", "justification": "Irrelevante para o gosto pessoal." },
+        { "text": "A cor do pôster do filme", "justification": "Geralmente irrelevante." }
+      ],
+      "correctAnswer": "As avaliações (notas) que os usuários dão para diferentes gêneros"
+    },
+    {
+      "id": 9,
+      "question": "O que acontece se você escolher características irrelevantes para o algoritmo KNN?",
+      "options": [
+        { "text": "O algoritmo fica mais rápido", "justification": "Falso." },
+        { "text": "A precisão das previsões diminui drasticamente (ruído)", "justification": "Correto! Comparar pessoas pela cor da meia para recomendar filmes não trará bons resultados." },
+        { "text": "O computador ignora essas características automaticamente", "justification": "Não, o KNN usa tudo o que você der a ele; você deve filtrar." },
+        { "text": "O resultado final não muda", "justification": "Muda para pior." }
+      ],
+      "correctAnswer": "A precisão das previsões diminui drasticamente (ruído)"
+    },
+    {
+      "id": 10,
+      "question": "Um sistema de OCR (reconhecimento de caracteres) pode usar KNN para:",
+      "options": [
+        { "text": "Contar quantas letras existem no mundo", "justification": "Não." },
+        { "text": "Comparar a forma de uma letra desenhada com milhares de exemplos conhecidos", "justification": "Correto! Ele vê com qual 'vizinho' (exemplo de letra A, B ou C) o desenho atual mais se parece." },
+        { "text": "Traduzir textos automaticamente", "justification": "Isso envolve PLN (Processamento de Linguagem Natural)." },
+        { "text": "Mudar a fonte do texto", "justification": "Não." }
+      ],
+      "correctAnswer": "Comparar a forma de uma letra desenhada com milhares de exemplos conhecidos"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "title": "Quizz: Entendendo Algoritmos - Capítulo 9",
+  "description": "Teste seus conhecimentos sobre Programação Dinâmica.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "O que caracteriza fundamentalmente a Programação Dinâmica?",
+      "options": [
+        { "text": "Dividir o problema em partes independentes e resolver recursivamente", "justification": "Isso é 'Dividir para Conquistar'." },
+        { "text": "Resolver subproblemas que se sobrepõem e armazenar os resultados para evitar recálculos", "justification": "Correto! A memorização (ou tabulação) é a chave." },
+        { "text": "Escolher sempre a melhor opção imediata", "justification": "Isso é Algoritmo Guloso." },
+        { "text": "Usar aleatoriedade para encontrar a solução", "justification": "Isso seriam algoritmos probabilísticos." }
+      ],
+      "correctAnswer": "Resolver subproblemas que se sobrepõem e armazenar os resultados para evitar recálculos"
+    },
+    {
+      "id": 2,
+      "question": "Qual é a principal diferença entre Programação Dinâmica e a estratégia 'Dividir para Conquistar'?",
+      "options": [
+        { "text": "Não há diferença, são sinônimos", "justification": "São técnicas distintas." },
+        { "text": "Programação Dinâmica é usada quando os subproblemas são independentes", "justification": "O contrário é verdadeiro." },
+        { "text": "Programação Dinâmica é usada quando os subproblemas dependem uns dos outros (se sobrepõem)", "justification": "Correto! Se não há sobreposição, D&C basta." },
+        { "text": "Dividir para Conquistar usa tabelas, Programação Dinâmica não", "justification": "Geralmente é o oposto." }
+      ],
+      "correctAnswer": "Programação Dinâmica é usada quando os subproblemas dependem uns dos outros (se sobrepõem)"
+    },
+    {
+      "id": 3,
+      "question": "No clássico 'Problema da Mochila' (Knapsack Problem), por que a abordagem gulosa falha?",
+      "options": [
+        { "text": "Porque ela é muito lenta", "justification": "Algoritmos gulosos são rápidos." },
+        { "text": "Porque ela não considera combinações de itens que, juntos, preenchem melhor o espaço", "justification": "Correto! Pegar o item mais valioso primeiro pode impedir que você pegue dois itens menores que somam mais valor." },
+        { "text": "Porque mochilas não suportam peso", "justification": "Irrelevante." },
+        { "text": "Porque exige números negativos", "justification": "Não exige." }
+      ],
+      "correctAnswer": "Porque ela não considera combinações de itens que, juntos, preenchem melhor o espaço"
+    },
+    {
+      "id": 4,
+      "question": "Qual ferramenta visual é frequentemente usada para resolver problemas de Programação Dinâmica?",
+      "options": [
+        { "text": "Um gráfico de pizza", "justification": "Não ajuda muito." },
+        { "text": "Uma tabela ou grade (grid)", "justification": "Correto! As células armazenam as soluções dos subproblemas." },
+        { "text": "Uma linha do tempo", "justification": "Não." },
+        { "text": "Um fluxograma circular", "justification": "Não." }
+      ],
+      "correctAnswer": "Uma tabela ou grade (grid)"
+    },
+    {
+      "id": 5,
+      "question": "Existe uma fórmula única (Fórmula de Feynman) para preencher a grade em qualquer problema de Programação Dinâmica?",
+      "options": [
+        { "text": "Sim, a fórmula é sempre max(item anterior, item atual)", "justification": "Depende do problema." },
+        { "text": "Não, cada problema exige uma lógica de preenchimento específica", "justification": "Correto! O que as células representam varia de problema para problema." },
+        { "text": "Sim, é a Fórmula de Bhaskara", "justification": "Isso é para equações quadráticas." },
+        { "text": "Sim, mas apenas computadores quânticos conhecem", "justification": "Falso." }
+      ],
+      "correctAnswer": "Não, cada problema exige uma lógica de preenchimento específica"
+    },
+    {
+      "id": 6,
+      "question": "Qual a diferença entre 'Substring Comum' e 'Subsequência Comum'?",
+      "options": [
+        { "text": "Substring exige caracteres consecutivos; Subsequência mantém a ordem mas não a contiguidade", "justification": "Correto! Ex: 'fish' e 'fosh'. Substring comum: 'sh'. Subsequência comum: 'fsh'." },
+        { "text": "Subsequência exige caracteres consecutivos", "justification": "Inverso." },
+        { "text": "São a mesma coisa", "justification": "Não são." },
+        { "text": "Substring é para números, Subsequência para letras", "justification": "Ambos funcionam para sequências de qualquer dado." }
+      ],
+      "correctAnswer": "Substring exige caracteres consecutivos; Subsequência mantém a ordem mas não a contiguidade"
+    },
+    {
+      "id": 7,
+      "question": "Qual destas é uma aplicação prática de algoritmos de 'Maior Subsequência Comum'?",
+      "options": [
+        { "text": "Calcular rotas de GPS", "justification": "Isso é Dijkstra/A*." },
+        { "text": "Comparação de fitas de DNA ou diff de arquivos", "justification": "Correto! Identificar semelhanças estruturais em sequências." },
+        { "text": "Renderização de vídeos", "justification": "Processamento de imagem." },
+        { "text": "Ordenação de biblioteca", "justification": "Ordenação." }
+      ],
+      "correctAnswer": "Comparação de fitas de DNA ou diff de arquivos"
+    },
+    {
+      "id": 8,
+      "question": "A Programação Dinâmica funciona bem quando:",
+      "options": [
+        { "text": "O problema envolve variáveis contínuas infinitas", "justification": "Geralmente requer subproblemas discretos." },
+        { "text": "O problema pode ser dividido em subproblemas discretos", "justification": "Correto! Como itens inteiros na mochila." },
+        { "text": "Você não tem memória RAM disponível", "justification": "DP usa muita memória para a tabela." },
+        { "text": "O problema depende de sorte", "justification": "Não." }
+      ],
+      "correctAnswer": "O problema pode ser dividido em subproblemas discretos"
+    },
+    {
+      "id": 9,
+      "question": "O que acontece se você alterar a ordem dos itens ao preencher a tabela do Problema da Mochila?",
+      "options": [
+        { "text": "O resultado final muda", "justification": "Se o algoritmo estiver correto, a ordem não deve importar para o valor máximo final." },
+        { "text": "O resultado final deve ser o mesmo", "justification": "Correto! A solução ótima independe da ordem de processamento das linhas." },
+        { "text": "A tabela pega fogo", "justification": "Exagerado." },
+        { "text": "O algoritmo trava", "justification": "Não." }
+      ],
+      "correctAnswer": "O resultado final deve ser o mesmo"
+    },
+    {
+      "id": 10,
+      "question": "Por que a Programação Dinâmica é considerada 'difícil'?",
+      "options": [
+        { "text": "Porque exige matemática avançada de cálculo", "justification": "Geralmente é apenas lógica e aritmética básica." },
+        { "text": "Porque não existe um 'receita de bolo' única; você precisa modelar a tabela para cada problema", "justification": "Correto! A dificuldade está na modelagem do problema." },
+        { "text": "Porque computadores não conseguem executá-la", "justification": "Falso." },
+        { "text": "Porque foi inventada por alienígenas", "justification": "Falso." }
+      ],
+      "correctAnswer": "Porque não existe um 'receita de bolo' única; você precisa modelar a tabela para cada problema"
+    }
+  ]
+}

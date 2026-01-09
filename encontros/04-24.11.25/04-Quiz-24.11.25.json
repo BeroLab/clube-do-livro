@@ -1,0 +1,116 @@
+{
+  "title": "Quizz: Entendendo Algoritmos - Capítulo 8",
+  "description": "Teste seus conhecimentos sobre Algoritmos Gulosos e Problemas NP-Completos.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "O que define fundamentalmente um Algoritmo Guloso (Greedy Algorithm)?",
+      "options": [
+        { "text": "Ele calcula todas as possibilidades antes de decidir", "justification": "Isso seria força bruta." },
+        { "text": "Ele escolhe a melhor opção disponível no momento (ótimo local) esperando chegar no ótimo global", "justification": "Correto! Ele toma decisões imediatistas." },
+        { "text": "Ele sempre escolhe a opção mais cara", "justification": "Não necessariamente." },
+        { "text": "Ele nunca termina de rodar", "justification": "Falso, geralmente são rápidos." }
+      ],
+      "correctAnswer": "Ele escolhe a melhor opção disponível no momento (ótimo local) esperando chegar no ótimo global"
+    },
+    {
+      "id": 2,
+      "question": "Algoritmos Gulosos sempre encontram a solução perfeita (ótimo global)?",
+      "options": [
+        { "text": "Sim, sempre", "justification": "Não, eles podem ficar presos em máximos locais." },
+        { "text": "Não, mas frequentemente encontram uma solução 'boa o suficiente'", "justification": "Correto! Eles trocam precisão absoluta por velocidade." },
+        { "text": "Nunca encontram uma solução válida", "justification": "Exagerado." },
+        { "text": "Sim, mas demoram muito", "justification": "Geralmente são rápidos." }
+      ],
+      "correctAnswer": "Não, mas frequentemente encontram uma solução 'boa o suficiente'"
+    },
+    {
+      "id": 3,
+      "question": "Qual é um exemplo clássico de problema NP-Completo mencionado no capítulo?",
+      "options": [
+        { "text": "Busca Binária", "justification": "Isso é O(log n)." },
+        { "text": "O Problema do Caixeiro Viajante (Traveling Salesperson)", "justification": "Correto! Encontrar o menor caminho passando por todas as cidades é incrivelmente custoso." },
+        { "text": "Ordenação de lista (Quicksort)", "justification": "Isso é O(n log n)." },
+        { "text": "Soma de dois números", "justification": "Trivial." }
+      ],
+      "correctAnswer": "O Problema do Caixeiro Viajante (Traveling Salesperson)"
+    },
+    {
+      "id": 4,
+      "question": "Quando nos deparamos com um problema NP-Completo, qual é a melhor abordagem prática?",
+      "options": [
+        { "text": "Tentar resolver na força bruta", "justification": "Impossível para entradas grandes." },
+        { "text": "Usar um Algoritmo de Aproximação (como um algoritmo guloso)", "justification": "Correto! Aceitamos uma solução sub-ótima em troca de um tempo de execução viável." },
+        { "text": "Desistir do problema", "justification": "Não é uma opção profissional." },
+        { "text": "Comprar um computador quântico", "justification": "Ainda não acessível para todos." }
+      ],
+      "correctAnswer": "Usar um Algoritmo de Aproximação (como um algoritmo guloso)"
+    },
+    {
+      "id": 5,
+      "question": "No problema da Cobertura de Conjuntos (Set Cover) - o exemplo das estações de rádio - qual estratégia gulosa é usada?",
+      "options": [
+        { "text": "Escolher a estação mais barata", "justification": "O foco era cobrir estados, não custo monetário." },
+        { "text": "Escolher a estação que cobre o maior número de estados ainda não cobertos", "justification": "Correto! A cada passo, reduzimos o problema o máximo possível." },
+        { "text": "Escolher estações aleatoriamente", "justification": "Ineficiente." },
+        { "text": "Escolher a estação com o nome mais curto", "justification": "Irrelevante." }
+      ],
+      "correctAnswer": "Escolher a estação que cobre o maior número de estados ainda não cobertos"
+    },
+    {
+      "id": 6,
+      "question": "Qual é a principal vantagem dos algoritmos gulosos?",
+      "options": [
+        { "text": "São fáceis de implementar e rápidos", "justification": "Correto! A lógica é simples e não requer backtracking complexo." },
+        { "text": "Garantem 100% de precisão", "justification": "Falso." },
+        { "text": "Funcionam com números complexos", "justification": "Não é a característica principal." },
+        { "text": "Não usam memória", "justification": "Todo algoritmo usa memória." }
+      ],
+      "correctAnswer": "São fáceis de implementar e rápidos"
+    },
+    {
+      "id": 7,
+      "question": "O que caracteriza a complexidade de tempo de um problema NP-Completo como o Caixeiro Viajante?",
+      "options": [
+        { "text": "O(n)", "justification": "Linear, muito rápido." },
+        { "text": "O(n log n)", "justification": "Rápido." },
+        { "text": "O(n!) ou O(2ⁿ)", "justification": "Correto! Crescimento fatorial ou exponencial, tornando-se impossível rapidamente." },
+        { "text": "O(1)", "justification": "Instantâneo." }
+      ],
+      "correctAnswer": "O(n!) ou O(2ⁿ)"
+    },
+    {
+      "id": 8,
+      "question": "Qual é um sinal de que você pode estar lidando com um problema NP-Completo?",
+      "options": [
+        { "text": "O problema envolve calcular 'todas as combinações' de algo", "justification": "Correto! 'Todas as combinações' geralmente implica complexidade exponencial." },
+        { "text": "O problema envolve ordenar números", "justification": "Isso é fácil." },
+        { "text": "O problema tem um input fixo", "justification": "Não." },
+        { "text": "O problema pode ser resolvido com um loop simples", "justification": "Isso seria O(n)." }
+      ],
+      "correctAnswer": "O problema envolve calcular 'todas as combinações' de algo"
+    },
+    {
+      "id": 9,
+      "question": "No contexto de algoritmos gulosos, o que significa 'ótimo local'?",
+      "options": [
+        { "text": "A melhor solução para o mundo todo", "justification": "Isso é ótimo global." },
+        { "text": "A melhor escolha possível no passo atual, sem pensar no futuro", "justification": "Correto! É uma decisão míope." },
+        { "text": "A solução que usa menos memória local", "justification": "Não se refere a RAM." },
+        { "text": "Uma solução que funciona apenas no seu computador", "justification": "Não." }
+      ],
+      "correctAnswer": "A melhor escolha possível no passo atual, sem pensar no futuro"
+    },
+    {
+      "id": 10,
+      "question": "Por que a solução exata para o problema da Cobertura de Conjuntos (Rádios) é lenta?",
+      "options": [
+        { "text": "Porque precisa listar todo subconjunto possível de estações", "justification": "Correto! O número de subconjuntos é 2ⁿ." },
+        { "text": "Porque as ondas de rádio são lentas", "justification": "Nada a ver com física." },
+        { "text": "Porque somar é difícil", "justification": "Soma é fácil." },
+        { "text": "Porque não existem algoritmos para isso", "justification": "Existem, só são lentos." }
+      ],
+      "correctAnswer": "Porque precisa listar todo subconjunto possível de estações"
+    }
+  ]
+}

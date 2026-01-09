@@ -1,0 +1,236 @@
+{
+  "title": "Quizz: Entendendo Algoritmos - Capítulos 5 e 6",
+  "description": "Teste seus conhecimentos sobre Tabelas Hash e Pesquisa em Largura (BFS).",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Qual é a principal característica de uma função hash ideal?",
+      "options": [
+        {
+          "text": "Ela deve retornar sempre o mesmo valor para qualquer entrada",
+          "justification": "Isso seria inútil, pois colocaria tudo no mesmo lugar."
+        },
+        {
+          "text": "Ela deve mapear diferentes entradas para diferentes saídas de forma consistente",
+          "justification": "Correto! A consistência (mesma entrada = mesma saída) e a distribuição uniforme são chaves."
+        },
+        {
+          "text": "Ela deve retornar números aleatórios a cada chamada",
+          "justification": "Se fosse aleatório, você nunca conseguiria recuperar o item guardado."
+        },
+        {
+          "text": "Ela deve sempre retornar 0 ou 1",
+          "justification": "Isso limitaria a tabela a apenas 2 posições."
+        }
+      ],
+      "correctAnswer": "Ela deve mapear diferentes entradas para diferentes saídas de forma consistente"
+    },
+    {
+      "id": 2,
+      "question": "Qual é a complexidade de tempo de caso médio para buscas em uma Tabela Hash?",
+      "options": [
+        {
+          "text": "O(n)",
+          "justification": "Isso é busca simples."
+        },
+        {
+          "text": "O(log n)",
+          "justification": "Isso é busca binária."
+        },
+        {
+          "text": "O(1)",
+          "justification": "Correto! Tabelas hash oferecem acesso instantâneo na média."
+        },
+        {
+          "text": "O(n²)",
+          "justification": "Muito lento para uma estrutura de busca."
+        }
+      ],
+      "correctAnswer": "O(1)"
+    },
+    {
+      "id": 3,
+      "question": "O que é uma 'colisão' em uma tabela hash?",
+      "options": [
+        {
+          "text": "Quando a tabela fica sem memória",
+          "justification": "Isso é falta de espaço, não colisão."
+        },
+        {
+          "text": "Quando duas chaves diferentes são atribuídas ao mesmo slot (índice)",
+          "justification": "Correto! Ocorre quando a função hash retorna o mesmo índice para entradas distintas."
+        },
+        {
+          "text": "Quando tentamos inserir uma chave que já existe",
+          "justification": "Isso é atualização ou duplicata, colisão refere-se ao índice mapeado."
+        },
+        {
+          "text": "Quando o computador trava",
+          "justification": "Nada a ver com a lógica do algoritmo."
+        }
+      ],
+      "correctAnswer": "Quando duas chaves diferentes são atribuídas ao mesmo slot (índice)"
+    },
+    {
+      "id": 4,
+      "question": "Qual é uma solução comum para resolver colisões em tabelas hash?",
+      "options": [
+        {
+          "text": "Apagar o item antigo",
+          "justification": "Perderíamos dados."
+        },
+        {
+          "text": "Criar uma lista encadeada no slot onde ocorreu a colisão",
+          "justification": "Correto! Assim, múltiplos itens podem habitar o mesmo índice."
+        },
+        {
+          "text": "Reininciar o computador",
+          "justification": "Não resolve o problema lógico."
+        },
+        {
+          "text": "Usar busca binária",
+          "justification": "Busca binária é para arrays ordenados, não para resolver colisões."
+        }
+      ],
+      "correctAnswer": "Criar uma lista encadeada no slot onde ocorreu a colisão"
+    },
+    {
+      "id": 5,
+      "question": "Para que servem tabelas hash no contexto de servidores web?",
+      "options": [
+        {
+          "text": "Para renderizar imagens 3D",
+          "justification": "Isso é trabalho da GPU."
+        },
+        {
+          "text": "Para Caching (armazenar dados para acesso rápido)",
+          "justification": "Correto! Hash maps são a base de caches como Redis ou cache de DNS."
+        },
+        {
+          "text": "Para criptografar senhas",
+          "justification": "Funções de hash criptográfico são diferentes de tabelas hash de dados."
+        },
+        {
+          "text": "Para ordenar listas",
+          "justification": "Hash tables não mantêm ordem."
+        }
+      ],
+      "correctAnswer": "Para Caching (armazenar dados para acesso rápido)"
+    },
+    {
+      "id": 6,
+      "question": "O algoritmo de Pesquisa em Largura (BFS) é ideal para encontrar o que?",
+      "options": [
+        {
+          "text": "O caminho mais panorâmico",
+          "justification": "BFS não liga para a beleza do caminho."
+        },
+        {
+          "text": "O caminho mais curto em grafos não ponderados",
+          "justification": "Correto! Ele encontra o caminho com o menor número de arestas."
+        },
+        {
+          "text": "O caminho mais rápido em grafos com pesos",
+          "justification": "Para isso usa-se o algoritmo de Dijkstra."
+        },
+        {
+          "text": "A árvore genealógica completa",
+          "justification": "Pode ser usado, mas o foco principal é o 'caminho mínimo'."
+        }
+      ],
+      "correctAnswer": "O caminho mais curto em grafos não ponderados"
+    },
+    {
+      "id": 7,
+      "question": "Qual estrutura de dados é fundamental para implementar a Pesquisa em Largura (BFS)?",
+      "options": [
+        {
+          "text": "Pilha (Stack)",
+          "justification": "Pilha é usada na Pesquisa em Profundidade (DFS)."
+        },
+        {
+          "text": "Array",
+          "justification": "Array é genérico demais."
+        },
+        {
+          "text": "Fila (Queue)",
+          "justification": "Correto! A fila garante a ordem FIFO, explorando camadas sequencialmente."
+        },
+        {
+          "text": "Árvore Binária",
+          "justification": "Isso é um tipo de grafo, não a estrutura auxiliar do algoritmo."
+        }
+      ],
+      "correctAnswer": "Fila (Queue)"
+    },
+    {
+      "id": 8,
+      "question": "O que são vértices e arestas em um grafo?",
+      "options": [
+        {
+          "text": "Vértices são linhas, Arestas são pontos",
+          "justification": "Invertido."
+        },
+        {
+          "text": "Vértices são nós (pontos), Arestas são conexões (linhas)",
+          "justification": "Correto! Vértices representam entidades e arestas representam relações."
+        },
+        {
+          "text": "Vértices são tabelas, Arestas são chaves",
+          "justification": "Terminologia de banco de dados."
+        },
+        {
+          "text": "Vértices são o início, Arestas são o fim",
+          "justification": "Não faz sentido."
+        }
+      ],
+      "correctAnswer": "Vértices são nós (pontos), Arestas são conexões (linhas)"
+    },
+    {
+      "id": 9,
+      "question": "Em um grafo direcionado (dígrafo), a relação A -> B significa:",
+      "options": [
+        {
+          "text": "A está conectado a B, e B está conectado a A",
+          "justification": "Isso seria um grafo não direcionado."
+        },
+        {
+          "text": "Você pode ir de A para B, mas não necessariamente de B para A",
+          "justification": "Correto! A seta indica o sentido único da relação (ex: A segue B no Twitter)."
+        },
+        {
+          "text": "A e B são a mesma pessoa",
+          "justification": "Incorreto."
+        },
+        {
+          "text": "O caminho é bloqueado",
+          "justification": "Não."
+        }
+      ],
+      "correctAnswer": "Você pode ir de A para B, mas não necessariamente de B para A"
+    },
+    {
+      "id": 10,
+      "question": "Qual é a complexidade de tempo da Pesquisa em Largura?",
+      "options": [
+        {
+          "text": "O(n!)",
+          "justification": "Muito lento."
+        },
+        {
+          "text": "O(V + A)",
+          "justification": "Correto! Vértices + Arestas. Você percorre cada vértice e cada aresta no pior caso."
+        },
+        {
+          "text": "O(1)",
+          "justification": "Impossível visitar um grafo instantaneamente."
+        },
+        {
+          "text": "O(V * A)",
+          "justification": "Não multiplicamos, somamos o trabalho."
+        }
+      ],
+      "correctAnswer": "O(V + A)"
+    }
+  ]
+}

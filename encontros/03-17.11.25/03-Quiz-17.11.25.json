@@ -1,0 +1,116 @@
+{
+  "title": "Quizz: Entendendo Algoritmos - Capítulo 7",
+  "description": "Teste seus conhecimentos sobre o Algoritmo de Dijkstra e Grafos Ponderados.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Qual é a principal diferença entre a Pesquisa em Largura (BFS) e o Algoritmo de Dijkstra?",
+      "options": [
+        { "text": "A BFS é para grafos ponderados, Dijkstra para não ponderados", "justification": "O contrário é verdadeiro." },
+        { "text": "A BFS encontra o caminho com menos arestas; Dijkstra encontra o caminho com menor peso total", "justification": "Correto! BFS ignora os pesos das conexões." },
+        { "text": "Dijkstra é mais rápido em todos os casos", "justification": "Não necessariamente, Dijkstra é mais complexo." },
+        { "text": "Não há diferença", "justification": "São algoritmos distintos para propósitos distintos." }
+      ],
+      "correctAnswer": "A BFS encontra o caminho com menos arestas; Dijkstra encontra o caminho com menor peso total"
+    },
+    {
+      "id": 2,
+      "question": "O Algoritmo de Dijkstra foi projetado especificamente para qual tipo de grafo?",
+      "options": [
+        { "text": "Grafos Não Ponderados", "justification": "Para isso, BFS é suficiente." },
+        { "text": "Grafos Ponderados (com pesos nas arestas)", "justification": "Correto! Ele leva em conta o 'custo' de cada conexão." },
+        { "text": "Árvores Binárias", "justification": "Pode funcionar, mas é excessivo." },
+        { "text": "Listas Encadeadas", "justification": "Isso é uma estrutura linear." }
+      ],
+      "correctAnswer": "Grafos Ponderados (com pesos nas arestas)"
+    },
+    {
+      "id": 3,
+      "question": "O que acontece se você usar o Algoritmo de Dijkstra em um grafo com arestas de peso negativo?",
+      "options": [
+        { "text": "Ele funciona perfeitamente", "justification": "Não, ele assume que, ao adicionar uma aresta, o custo total nunca diminui." },
+        { "text": "Ele retorna o caminho mais longo", "justification": "Não." },
+        { "text": "O algoritmo pode falhar e não encontrar o caminho ótimo", "justification": "Correto! Dijkstra não lida com arestas negativas." },
+        { "text": "O computador explode", "justification": "Exagerado." }
+      ],
+      "correctAnswer": "O algoritmo pode falhar e não encontrar o caminho ótimo"
+    },
+    {
+      "id": 4,
+      "question": "Qual algoritmo é recomendado para grafos com pesos negativos?",
+      "options": [
+        { "text": "Busca Binária", "justification": "Isso é para listas ordenadas." },
+        { "text": "Algoritmo de Bellman-Ford", "justification": "Correto! Ele é capaz de detectar ciclos negativos e lidar com pesos negativos." },
+        { "text": "Quicksort", "justification": "Isso é ordenação." },
+        { "text": "BFS", "justification": "Não lida com pesos." }
+      ],
+      "correctAnswer": "Algoritmo de Bellman-Ford"
+    },
+    {
+      "id": 5,
+      "question": "Qual é o primeiro passo do Algoritmo de Dijkstra?",
+      "options": [
+        { "text": "Calcular a média de todos os pesos", "justification": "Irrelevante." },
+        { "text": "Encontrar o vértice mais 'barato' (menor custo) ainda não processado", "justification": "Correto! Começamos sempre pelo nó mais acessível a partir do início." },
+        { "text": "Visitar todos os nós aleatoriamente", "justification": "Isso seria ineficiente." },
+        { "text": "Inverter as setas do grafo", "justification": "Isso mudaria o problema." }
+      ],
+      "correctAnswer": "Encontrar o vértice mais 'barato' (menor custo) ainda não processado"
+    },
+    {
+      "id": 6,
+      "question": "Em um grafo ponderado, o que os 'pesos' geralmente representam?",
+      "options": [
+        { "text": "A cor da aresta", "justification": "Geralmente não." },
+        { "text": "Custos como tempo, distância, dinheiro ou esforço", "justification": "Correto! Qualquer métrica que queiramos minimizar." },
+        { "text": "O número de vértices", "justification": "Não." },
+        { "text": "A importância estética", "justification": "Subjetivo demais." }
+      ],
+      "correctAnswer": "Custos como tempo, distância, dinheiro ou esforço"
+    },
+    {
+      "id": 7,
+      "question": "O Algoritmo de Dijkstra funciona em grafos com ciclos?",
+      "options": [
+        { "text": "Sim, desde que não sejam ciclos de peso negativo", "justification": "Correto! Se houver um ciclo que diminui o custo total indefinidamente, o problema não tem solução." },
+        { "text": "Não, apenas em árvores", "justification": "Funciona em grafos cíclicos positivos." },
+        { "text": "Sim, em qualquer tipo de ciclo", "justification": "Ciclos negativos quebram o algoritmo." },
+        { "text": "Nenhum algoritmo funciona em grafos com ciclos", "justification": "Falso." }
+      ],
+      "correctAnswer": "Sim, desde que não sejam ciclos de peso negativo"
+    },
+    {
+      "id": 8,
+      "question": "No exemplo do livro para ilustrar Dijkstra, qual era o objetivo da troca?",
+      "options": [
+        { "text": "Trocar figurinhas", "justification": "Outro exemplo." },
+        { "text": "Obter um Piano pelo menor custo", "justification": "Correto! O exemplo envolvia trocar partituras, discos, etc., até chegar ao piano." },
+        { "text": "Encontrar o caminho para a escola", "justification": "Exemplo genérico." },
+        { "text": "Vender ações", "justification": "Não mencionado." }
+      ],
+      "correctAnswer": "Obter um Piano pelo menor custo"
+    },
+    {
+      "id": 9,
+      "question": "Se você tem um grafo NÃO ponderado, por que usar BFS em vez de Dijkstra?",
+      "options": [
+        { "text": "Porque BFS é mais lenta", "justification": "Não." },
+        { "text": "Porque Dijkstra não funciona", "justification": "Dijkstra funciona (assumindo peso 1), mas é excessivo." },
+        { "text": "Porque BFS é mais simples e rápida para esse caso específico", "justification": "Correto! Não há necessidade de calcular custos complexos se todas as arestas são iguais." },
+        { "text": "Porque BFS usa menos memória RAM", "justification": "Depende, mas a simplicidade é o fator chave." }
+      ],
+      "correctAnswer": "Porque BFS é mais simples e rápida para esse caso específico"
+    },
+    {
+      "id": 10,
+      "question": "Em qual aplicação do mundo real o Algoritmo de Dijkstra é amplamente utilizado?",
+      "options": [
+        { "text": "Edição de imagens", "justification": "Processamento de pixels." },
+        { "text": "Sistemas de GPS e Roteamento de Redes", "justification": "Correto! Para calcular a rota mais rápida ou o caminho de dados mais eficiente." },
+        { "text": "Compilação de código", "justification": "Análise sintática." },
+        { "text": "Jogos de Xadrez", "justification": "Minimax." }
+      ],
+      "correctAnswer": "Sistemas de GPS e Roteamento de Redes"
+    }
+  ]
+}

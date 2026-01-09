@@ -1,0 +1,213 @@
+{
+  "title": "Quizz: Entendendo Algoritmos - Capítulos 1 a 4",
+  "description": "Teste seus conhecimentos sobre Busca Binária, Arrays vs Listas, Recursão e Quicksort.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Qual é o pré-requisito obrigatório para que a Busca Binária funcione corretamente em uma lista?",
+      "options": [
+        {
+          "text": "A lista deve ter menos de 100 elementos",
+          "justification": "O tamanho da lista não é um limitante; na verdade, a busca binária brilha mais em listas grandes."
+        },
+        {
+          "text": "A lista deve estar ordenada",
+          "justification": "Correto! A lógica de eliminar metade das opções só funciona se você souber que os itens restantes estão à direita ou à esquerda do chute."
+        },
+        {
+          "text": "A lista deve conter apenas números inteiros",
+          "justification": "Algoritmos de busca funcionam com strings, objetos e qualquer dado que possa ser comparado e ordenado."
+        },
+        {
+          "text": "A lista deve estar em ordem decrescente",
+          "justification": "A lista precisa estar ordenada, mas pode ser crescente ou decrescente."
+        }
+      ],
+      "correctAnswer": "A lista deve estar ordenada"
+    },
+    {
+      "id": 2,
+      "question": "Se uma lista possui 1.024 elementos, qual é o número máximo de tentativas que a busca binária levará para encontrar um item?",
+      "options": [
+        {
+          "text": "1.024",
+          "justification": "Isso seria o pior caso da Busca Simples (O(n)), onde você olha um por um."
+        },
+        {
+          "text": "512",
+          "justification": "Eliminar metade de 1.024 deixa 512, mas a busca continua dividindo até sobrar um."
+        },
+        {
+          "text": "10",
+          "justification": "Correto! 2 elevado a 10 é 1.024. A cada passo cortamos a lista ao meio."
+        },
+        {
+          "text": "32",
+          "justification": "32 tentativas seriam necessárias para uma lista de aproximadamente 4 bilhões de itens."
+        }
+      ],
+      "correctAnswer": "10"
+    },
+    {
+      "id": 3,
+      "question": "O que a Notação Big O descreve exatamente?",
+      "options": [
+        {
+          "text": "O tempo exato em segundos que um algoritmo leva para rodar",
+          "justification": "O tempo em segundos varia conforme o computador. Big O mede o crescimento de operações."
+        },
+        {
+          "text": "O número de linhas de código de um algoritmo",
+          "justification": "Um código curto pode ser lento e um longo pode ser rápido. Big O não mede extensão do código."
+        },
+        {
+          "text": "A rapidez com que o tempo de execução aumenta conforme o tamanho da entrada cresce",
+          "justification": "Correto! É uma medida de taxa de crescimento (escalabilidade) do algoritmo."
+        },
+        {
+          "text": "A quantidade de memória RAM que o computador consome",
+          "justification": "Isso seria 'Complexidade de Espaço'. Embora Big O também sirva para isso, no contexto da pergunta (rapidez), refere-se ao tempo."
+        }
+      ],
+      "correctAnswer": "A rapidez com que o tempo de execução aumenta conforme o tamanho da entrada cresce"
+    },
+    {
+      "id": 4,
+      "question": "Em termos de memória, qual a diferença entre Arrays e Listas Encadeadas (Linked Lists)?",
+      "options": [
+        {
+          "text": "Arrays armazenam itens contiguamente (lado a lado), Listas espalham itens na memória",
+          "justification": "Correto! Arrays precisam de um bloco contínuo de memória, enquanto Listas Encadeadas usam referências (ponteiros) para conectar itens espalhados."
+        },
+        {
+          "text": "Listas Encadeadas ocupam menos espaço que Arrays",
+          "justification": "Falso. Listas geralmente ocupam mais espaço porque precisam armazenar o valor E o ponteiro para o próximo item."
+        },
+        {
+          "text": "Arrays permitem tamanho dinâmico sem custo, Listas são fixas",
+          "justification": "O oposto. Arrays têm tamanho fixo (em baixo nível), Listas são dinâmicas por natureza."
+        },
+        {
+          "text": "Não há diferença, o computador trata ambos igual",
+          "justification": "A alocação de memória é fundamentalmente diferente."
+        }
+      ],
+      "correctAnswer": "Arrays armazenam itens contiguamente (lado a lado), Listas espalham itens na memória"
+    },
+    {
+      "id": 5,
+      "question": "Qual é a complexidade Big O do algoritmo de Ordenação por Seleção (Selection Sort)?",
+      "options": [
+        {
+          "text": "O(n log n)",
+          "justification": "Isso seria Quicksort ou Mergesort."
+        },
+        {
+          "text": "O(n)",
+          "justification": "Impossível para ordenação baseada em comparação."
+        },
+        {
+          "text": "O(n²)",
+          "justification": "Correto! Você percorre a lista n vezes, e para cada vez, percorre n elementos para achar o menor (n * n)."
+        },
+        {
+          "text": "O(1)",
+          "justification": "Ordenação instantânea não existe."
+        }
+      ],
+      "correctAnswer": "O(n²)"
+    },
+    {
+      "id": 6,
+      "question": "Toda função recursiva deve ter duas partes fundamentais. Quais são elas?",
+      "options": [
+        {
+          "text": "Loop `for` e Loop `while`",
+          "justification": "Recursão substitui loops, não necessariamente os usa."
+        },
+        {
+          "text": "Caso Base e Caso Recursivo",
+          "justification": "Correto! O caso base impede o loop infinito, e o caso recursivo é onde a função chama a si mesma."
+        },
+        {
+          "text": "Parâmetros e Retorno",
+          "justification": "Toda função tem isso, não é específico de recursão."
+        },
+        {
+          "text": "Pilha e Fila",
+          "justification": "Estruturas de dados, não partes da função."
+        }
+      ],
+      "correctAnswer": "Caso Base e Caso Recursivo"
+    },
+    {
+      "id": 7,
+      "question": "O que acontece se você esquecer o 'caso base' em uma função recursiva?",
+      "options": [
+        {
+          "text": "A função retorna 0 automaticamente",
+          "justification": "Não, ela continua rodando."
+        },
+        {
+          "text": "O computador desliga",
+          "justification": "Exagerado, o sistema operacional protege contra isso."
+        },
+        {
+          "text": "Estouro de Pilha (Stack Overflow)",
+          "justification": "Correto! A pilha de chamadas enche até não haver mais memória disponível."
+        },
+        {
+          "text": "A função roda apenas uma vez",
+          "justification": "Ela rodará infinitamente (até o erro)."
+        }
+      ],
+      "correctAnswer": "Estouro de Pilha (Stack Overflow)"
+    },
+    {
+      "id": 8,
+      "question": "Qual estratégia o algoritmo Quicksort utiliza?",
+      "options": [
+        {
+          "text": "Força Bruta",
+          "justification": "Não, ele é otimizado."
+        },
+        {
+          "text": "Dividir para Conquistar (Divide and Conquer)",
+          "justification": "Correto! Ele escolhe um pivô e divide o array em dois sub-arrays (menores e maiores que o pivô)."
+        },
+        {
+          "text": "Primeiro a Entrar, Primeiro a Sair (FIFO)",
+          "justification": "Isso é fila."
+        },
+        {
+          "text": "Busca em Largura",
+          "justification": "Isso é para grafos."
+        }
+      ],
+      "correctAnswer": "Dividir para Conquistar (Divide and Conquer)"
+    },
+    {
+      "id": 9,
+      "question": "Qual é o 'Pior Caso' de complexidade do Quicksort?",
+      "options": [
+        {
+          "text": "O(n log n)",
+          "justification": "Esse é o caso médio (e melhor caso)."
+        },
+        {
+          "text": "O(n²)",
+          "justification": "Correto! Isso ocorre se o pivô for sempre o menor ou maior elemento (array já ordenado, por exemplo)."
+        },
+        {
+          "text": "O(n!)",
+          "justification": "Complexidade fatorial é muito pior, típica de caixeiro viajante força bruta."
+        },
+        {
+          "text": "O(1)",
+          "justification": "Impossível."
+        }
+      ],
+      "correctAnswer": "O(n²)"
+    }
+  ]
+}
