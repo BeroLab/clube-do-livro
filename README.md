@@ -1,40 +1,33 @@
 # 📖 Clube do Livro Técnico
 
-Repositório oficial do Clube do Livro Técnico da Berolab! Este espaço é dedicado à organização das nossas leituras, discussões, anotações e ao registro do nosso progresso.
+Repositório oficial do Clube do Livro Técnico! Este espaço é dedicado à organização das nossas leituras, discussões, anotações e ao registro do nosso progresso.
 
 <p align="center">
   <img src="assets/capa-clube-do-livro.png" alt="Logo do Clube do Livro" width="400"/>
 </p>
 
-### **Próxima Reunião:** `03/11/2025 às 19h - Capítulo 7`
+### **Próximo Encontro:** `Segunda Feira - 19/01/26 às 19h no canal de voz do discord da Berolab.`
+### **Tema:** `Capítulo 1`
 
 ## 📚 Leitura Atual
 
-- **Livro:** `Entendendo Algoritmos: Um Guia Ilustrado Para Programadores e Outros Curiosos`
-- **Autor:** `Aditya Y. Bhargava`
-- **Período:** `Data de Início: 13/10/2025`
-- **Capa:**
+- **Livro:** `O Programador Pragmático`
+- **Autor:** `Andrew Hunt e David Thomas`
+- **Período:** `Data de Início: 19/01/2026`
 
-<p align="center">
-  <img src="assets/capa-do-livro-entendendo-algoritmos.png" alt="Capa do Livro Entendo Algoritmos" width="400"/>
-</p>
 
 ## ⚙️ Como Funciona
 
-- **Frequência:** Realizamos encontros **quinzenais** para discutir os capítulos designados.
+- **Frequência:** Realizamos encontros **semanais** para discutir os capítulos designados.
 - **Comunicação:** Nossa principal plataforma de comunicação é o fórum [**Clube do Livro Técnico no Discord**](https://discord.com/channels/1370535949313773620/1422596473991991317).
 - **Discussões:** As reuniões ocorrem em um canal de voz da comunidade Berolab no Discord.
 - **Dinâmica:** Os integrantes devem ter ler o conteúdo especificado para a reunião. (Se você não tiver lido, pode ir para a reunião também, mas o seu aproveitamento do Clube será melhor se tiver lido).
-- **Duração do encontro:** de uma a duas horas.
+- **Duração do encontro:** uma hora.
 - **Este Repositório:** Usamos este espaço para:
   - Divulgar o livro atual e o cronograma de leitura.
   - Manter um histórico de livros já lidos.
-  - Compartilhar anotações e resumos (opcional).
+  - Compartilhar anotações e resumos.
 
-## 🚀 Como Participar
+## 🚀 Saiba mais
 
-O clube está sempre aberto a novos membros da Berolab.
-
-Para se juntar a nós, apenas leia os capítulos do próximo encontro e apareça na call no Discord. 😉
-
-**[➡️ Entre no nosso Discord](https://discord.com/channels/1370535949313773620/1422596473991991317)**
+**[Acesse o site do Clube do Livro](https://clube-do-livro-tecnico.vercel.app/)**
