@@ -1,0 +1,116 @@
+{
+  "title": "Quiz: O Programador Pragmático – Capítulo 1",
+  "description": "Teste seus conhecimentos sobre o capítulo 1 do livro O Programador Pragmático, que apresenta a filosofia pragmática no desenvolvimento de software.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Segundo o capítulo, o que significa ser um Programador Pragmático?",
+      "options": [
+        { "text": "Alguém que escreve código rapidamente, mesmo sem testes", "justification": "Velocidade sem qualidade não é o foco do pragmatismo." },
+        { "text": "Alguém que assume responsabilidade pelo seu trabalho e busca melhorias contínuas", "justification": "Correto! Responsabilidade e melhoria constante são pilares centrais." },
+        { "text": "Alguém que segue regras rígidas sem questionar", "justification": "O pragmatismo incentiva pensamento crítico." },
+        { "text": "Alguém que domina apenas uma linguagem de programação", "justification": "O livro incentiva aprendizado contínuo e diversidade de conhecimento." }
+      ],
+      "correctAnswer": "Alguém que assume responsabilidade pelo seu trabalho e busca melhorias contínuas"
+    },
+    {
+      "id": 2,
+      "question": "O que o autor quer transmitir com a história 'The Cat Ate My Source Code'?",
+      "options": [
+        { "text": "Que backups são desnecessários", "justification": "Na verdade, a história reforça a importância de backups." },
+        { "text": "Que devemos sempre ter uma desculpa pronta", "justification": "O ponto é justamente o oposto." },
+        { "text": "Que o programador deve assumir responsabilidade pelos seus erros", "justification": "Correto! Desculpas não substituem responsabilidade profissional." },
+        { "text": "Que falhas acontecem apenas por fatores externos", "justification": "O livro critica esse tipo de pensamento." }
+      ],
+      "correctAnswer": "Que o programador deve assumir responsabilidade pelos seus erros"
+    },
+    {
+      "id": 3,
+      "question": "O que é 'Entropia do Software' segundo o capítulo?",
+      "options": [
+        { "text": "Um erro matemático no código", "justification": "Não se trata de um conceito matemático formal." },
+        { "text": "A tendência natural do software se deteriorar com o tempo se não for cuidado", "justification": "Correto! Pequenos problemas ignorados levam ao caos." },
+        { "text": "Um bug crítico em produção", "justification": "É um conceito mais amplo que um bug específico." },
+        { "text": "Um problema exclusivo de sistemas legados", "justification": "Pode acontecer em qualquer sistema." }
+      ],
+      "correctAnswer": "A tendência natural do software se deteriorar com o tempo se não for cuidado"
+    },
+    {
+      "id": 4,
+      "question": "Qual a principal lição da metáfora da 'Broken Window Theory' aplicada ao software?",
+      "options": [
+        { "text": "Janelas quebradas não afetam o sistema", "justification": "Afetam sim, e muito." },
+        { "text": "Pequenos problemas não corrigidos incentivam mais degradação do código", "justification": "Correto! O descuido se espalha rapidamente." },
+        { "text": "Refatorar sempre gera mais bugs", "justification": "O livro defende refatoração responsável." },
+        { "text": "Apenas arquitetos devem corrigir problemas", "justification": "Todos são responsáveis pela qualidade." }
+      ],
+      "correctAnswer": "Pequenos problemas não corrigidos incentivam mais degradação do código"
+    },
+    {
+      "id": 5,
+      "question": "O que é o conceito de 'Good-Enough Software'?",
+      "options": [
+        { "text": "Entregar software de baixa qualidade", "justification": "Não significa baixa qualidade." },
+        { "text": "Entregar software perfeito, independentemente do custo", "justification": "Perfeição absoluta não é realista." },
+        { "text": "Entregar software que atende aos requisitos reais, equilibrando qualidade, tempo e custo", "justification": "Correto! O foco é valor real para o usuário." },
+        { "text": "Evitar testes para ganhar velocidade", "justification": "Testes continuam sendo importantes." }
+      ],
+      "correctAnswer": "Entregar software que atende aos requisitos reais, equilibrando qualidade, tempo e custo"
+    },
+    {
+      "id": 6,
+      "question": "O que é o 'Knowledge Portfolio' (Portfólio de Conhecimento)?",
+      "options": [
+        { "text": "Um currículo tradicional", "justification": "Vai muito além de um currículo." },
+        { "text": "Um conjunto de conhecimentos que deve ser continuamente investido e atualizado", "justification": "Correto! Conhecimento exige manutenção constante." },
+        { "text": "Uma lista fixa de tecnologias dominadas", "justification": "O portfólio nunca é fixo." },
+        { "text": "Um repositório de código no GitHub", "justification": "Pode fazer parte, mas não se limita a isso." }
+      ],
+      "correctAnswer": "Um conjunto de conhecimentos que deve ser continuamente investido e atualizado"
+    },
+    {
+      "id": 7,
+      "question": "Segundo o capítulo, qual é a melhor forma de manter seu conhecimento relevante?",
+      "options": [
+        { "text": "Aprender apenas quando o projeto exige", "justification": "Isso é reativo, não pragmático." },
+        { "text": "Aprender continuamente, um pouco todos os dias", "justification": "Correto! Aprendizado constante é um dos conselhos centrais." },
+        { "text": "Focar apenas na linguagem principal", "justification": "Diversidade de conhecimento é incentivada." },
+        { "text": "Evitar novas tecnologias", "justification": "O livro incentiva curiosidade." }
+      ],
+      "correctAnswer": "Aprender continuamente, um pouco todos os dias"
+    },
+    {
+      "id": 8,
+      "question": "O que a metáfora da 'Stone Soup' ensina?",
+      "options": [
+        { "text": "Que grandes projetos devem esperar condições ideais", "justification": "O livro sugere o contrário." },
+        { "text": "Que pequenas contribuições iniciais podem gerar grandes resultados", "justification": "Correto! Comece pequeno e gere engajamento." },
+        { "text": "Que improvisação é sempre ruim", "justification": "Improvisação inteligente pode ser positiva." },
+        { "text": "Que planejamento não é necessário", "justification": "Planejamento continua sendo importante." }
+      ],
+      "correctAnswer": "Que pequenas contribuições iniciais podem gerar grandes resultados"
+    },
+    {
+      "id": 9,
+      "question": "Qual a importância da comunicação segundo o capítulo?",
+      "options": [
+        { "text": "É secundária em relação ao código", "justification": "O livro discorda fortemente disso." },
+        { "text": "É tão importante quanto escrever código", "justification": "Correto! Código também é uma forma de comunicação." },
+        { "text": "Deve ser evitada para não gerar conflitos", "justification": "Boa comunicação evita conflitos." },
+        { "text": "Serve apenas para reuniões", "justification": "Comunicação vai muito além disso." }
+      ],
+      "correctAnswer": "É tão importante quanto escrever código"
+    },
+    {
+      "id": 10,
+      "question": "Qual é a mensagem central do primeiro capítulo?",
+      "options": [
+        { "text": "Programar é apenas escrever código", "justification": "O livro mostra que é muito mais do que isso." },
+        { "text": "Ferramentas são mais importantes que pessoas", "justification": "A filosofia pragmática valoriza pessoas." },
+        { "text": "Responsabilidade, aprendizado contínuo e cuidado com o código definem um bom programador", "justification": "Correto! Esse é o núcleo do capítulo." },
+        { "text": "Apenas arquitetos devem tomar decisões", "justification": "O pragmatismo incentiva autonomia." }
+      ],
+      "correctAnswer": "Responsabilidade, aprendizado contínuo e cuidado com o código definem um bom programador"
+    }
+  ]
+}
