@@ -1,0 +1,72 @@
+{
+  "title": "Quiz: O Programador Pragmático - Capítulo 2",
+  "description": "Teste seus conhecimentos sobre a Abordagem Pragmática para o desenvolvimento de software.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Qual é o princípio fundamental do DRY (Don't Repeat Yourself)?",
+      "options": [
+        { "text": "Escrever o código o mais rápido possível.", "justification": "Não. DRY não é sobre velocidade, mas sobre manutenção e evitar duplicação de conhecimento." },
+        { "text": "Cada pedaço de conhecimento deve ter uma representação única, inequívoca e autoritária.", "justification": "Correto! Isso evita inconsistências e facilita a manutenção, pois a mudança é feita em um só lugar." },
+        { "text": "Evitar usar a mesma variável em funções diferentes.", "justification": "Isso é escopo de variável, não o princípio DRY em sua essência." },
+        { "text": "Duplicar código para desacoplar módulos.", "justification": "Pelo contrário, o DRY busca reduzir a duplicação, não incentivá-la." }
+      ],
+      "correctAnswer": "Cada pedaço de conhecimento deve ter uma representação única, inequívoca e autoritária."
+    },
+    {
+      "id": 2,
+      "question": "O que significa um sistema ser 'ortogonal'?",
+      "options": [
+        { "text": "Que ele foi escrito em uma linguagem de baixo nível.", "justification": "A ortogonalidade é um conceito de design, não está ligada à linguagem." },
+        { "text": "Que os componentes do sistema são altamente dependentes uns dos outros.", "justification": "Incorreto. Ortogonalidade significa independência entre os componentes." },
+        { "text": "Que mudanças em um componente têm pouco ou nenhum efeito sobre os outros.", "justification": "Correto! Isso isola o impacto das mudanças, tornando o sistema mais robusto e fácil de testar." },
+        { "text": "Que o sistema é geometricamente perfeito.", "justification": "É uma analogia com a geometria, mas o significado é sobre independência de componentes." }
+      ],
+      "correctAnswer": "Que mudanças em um componente têm pouco ou nenhum efeito sobre os outros."
+    },
+    {
+      "id": 3,
+      "question": "Qual a principal diferença entre 'Tracer Bullets' e 'Protótipos'?",
+      "options": [
+        { "text": "Protótipos são feitos para serem descartados; Tracer Bullets são o esqueleto que evoluirá para o produto final.", "justification": "Correto! Protótipos são para aprender e depois jogar fora. Tracer bullets são uma primeira versão funcional, ainda que magra, do sistema." },
+        { "text": "Tracer Bullets são mais complexos que protótipos.", "justification": "Não necessariamente. A diferença está no propósito (descartável vs. incremental), não na complexidade." },
+        { "text": "Não há diferença, são apenas nomes diferentes para a mesma coisa.", "justification": "Falso. Eles servem a propósitos muito distintos no processo de desenvolvimento." },
+        { "text": "Protótipos testam a arquitetura, enquanto Tracer Bullets testam a interface do usuário.", "justification": "Ambos podem ser usados para testar diferentes aspectos, a diferença crucial é o destino do código." }
+      ],
+      "correctAnswer": "Protótipos são feitos para serem descartados; Tracer Bullets são o esqueleto que evoluirá para o produto final."
+    },
+    {
+      "id": 4,
+      "question": "O princípio da 'Reversibilidade' sugere que...",
+      "options": [
+        { "text": "Você deve ser capaz de reverter qualquer commit no controle de versão.", "justification": "Embora útil, o princípio se refere a decisões de arquitetura e design, não apenas ao controle de versão." },
+        { "text": "As decisões de design e arquitetura não devem ser gravadas em pedra, permitindo mudanças futuras.", "justification": "Correto! O objetivo é minimizar o custo de mudanças futuras, evitando 'becos sem saída' tecnológicos ou arquiteturais." },
+        { "text": "O software deve funcionar da mesma forma de trás para frente.", "justification": "Isso não faz sentido no contexto de engenharia de software." },
+        { "text": "Toda função deve ter uma função inversa correspondente.", "justification": "Isso se aplica a matemática, mas não é o significado de Reversibilidade no livro." }
+      ],
+      "correctAnswer": "As decisões de design e arquitetura não devem ser gravadas em pedra, permitindo mudanças futuras."
+    },
+    {
+      "id": 5,
+      "question": "Qual é a principal vantagem de usar 'Linguagens de Domínio' (DSLs)?",
+      "options": [
+        { "text": "Elas são sempre mais rápidas que linguagens de propósito geral.", "justification": "Nem sempre. A principal vantagem não é a performance, mas a clareza e expressividade." },
+        { "text": "Permitem que a comunicação sobre a lógica do negócio seja feita em um nível mais próximo do problema real.", "justification": "Correto! A DSL aproxima o código do domínio do problema, facilitando a comunicação entre desenvolvedores e especialistas da área." },
+        { "text": "Elas eliminam a necessidade de testes.", "justification": "Falso. Todo código, incluindo o que usa DSLs, precisa ser testado." },
+        { "text": "Qualquer um pode programar com elas sem treinamento.", "justification": "DSLs simplificam um domínio específico, mas ainda exigem entendimento e lógica." }
+      ],
+      "correctAnswer": "Permitem que a comunicação sobre a lógica do negócio seja feita em um nível mais próximo do problema real."
+    },
+    {
+      "id": 6,
+      "question": "Como um programador pragmático deve lidar com estimativas de projetos?",
+      "options": [
+        { "text": "Dar uma estimativa final e imutável no primeiro dia.", "justification": "O livro adverte contra isso, pois o conhecimento sobre o projeto é baixo no início." },
+        { "text": "Evitar dar estimativas a todo custo.", "justification": "Estimativas são necessárias para o negócio. O programador pragmático aprende a estimar melhor." },
+        { "text": "Fornecer estimativas que evoluem e são refinadas à medida que mais se aprende sobre o projeto.", "justification": "Correto! As estimativas devem ser dadas com uma margem de incerteza que diminui com o tempo e o conhecimento." },
+        { "text": "Sempre dobrar a estimativa inicial para garantir.", "justification": "Isso é uma tática, não uma abordagem pragmática para entender e comunicar a incerteza." }
+      ],
+      "correctAnswer": "Fornecer estimativas que evoluem e são refinadas à medida que mais se aprende sobre o projeto."
+    }
+  ]
+}
