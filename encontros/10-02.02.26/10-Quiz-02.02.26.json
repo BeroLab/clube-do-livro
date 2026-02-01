@@ -1,0 +1,116 @@
+{
+  "title": "Quiz: O Programador Pragmático – Capítulo 2 (Parte 2)",
+  "description": "Teste seus conhecimentos sobre os conceitos de Protótipos, Linguagens de Domínio (DSLs) e Estimativas do livro O Programador Pragmático.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Qual é o principal objetivo de um protótipo no desenvolvimento de software?",
+      "options": [
+        { "text": "Ser a primeira versão do produto final a ser evoluída.", "justification": "Incorreto. Esse é o conceito de 'Projétil Luminoso'. O código de um protótipo é feito para ser descartado." },
+        { "text": "Substituir a necessidade de documentação técnica.", "justification": "Falso. O protótipo é uma ferramenta de aprendizado e exploração, não de documentação." },
+        { "text": "É uma ferramenta de aprendizado, feita para explorar uma ideia e ser descartada.", "justification": "Correto! O valor de um protótipo está no conhecimento adquirido, não no código produzido." },
+        { "text": "Garantir que o sistema não tenha bugs.", "justification": "Pelo contrário, um protótipo geralmente ignora tratamento de erros e robustez para ser construído rapidamente." }
+      ],
+      "correctAnswer": "É uma ferramenta de aprendizado, feita para explorar uma ideia e ser descartada."
+    },
+    {
+      "id": 2,
+      "question": "Qual das seguintes afirmações descreve uma característica essencial de um protótipo?",
+      "options": [
+        { "text": "Deve ser robusto e ter um tratamento de erros completo.", "justification": "Falso. Um protótipo é o oposto disso; ele é focado e ignora aspectos de produção para ser rápido." },
+        { "text": "O código deve ser de alta qualidade para ser facilmente evoluído.", "justification": "Incorreto. A tentativa de evoluir o código de um protótipo é uma armadilha que leva a um mau design." },
+        { "text": "Ele é focado em responder a uma pergunta específica e ignora o resto.", "justification": "Correto! Um protótipo tem um escopo muito limitado para testar uma hipótese, validar um fluxo ou explorar uma tecnologia." },
+        { "text": "Leva muito tempo para ser construído, pois precisa ser perfeito.", "justification": "Falso. A velocidade de construção é crucial para que o ciclo de feedback seja rápido." }
+      ],
+      "correctAnswer": "Ele é focado em responder a uma pergunta específica e ignora o resto."
+    },
+    {
+      "id": 3,
+      "question": "O que é uma DSL (Linguagem de Domínio Específico) Externa?",
+      "options": [
+        { "text": "É uma forma de escrever código em uma linguagem como Ruby ou Kotlin que parece uma linguagem de domínio.", "justification": "Essa é a definição de uma DSL Interna, que usa a sintaxe da linguagem hospedeira." },
+        { "text": "É uma linguagem nova, com sua própria sintaxe e gramática, que precisa de um parser.", "justification": "Correto! SQL ou arquivos de configuração YAML são exemplos de DSLs externas, pois não são código de uma linguagem de propósito geral." },
+        { "text": "É qualquer biblioteca ou framework que ajuda a resolver um problema.", "justification": "Incorreto. Embora uma biblioteca possa ser usada para criar uma DSL, ela por si só não é uma." },
+        { "text": "É um diagrama visual para representar o domínio.", "justification": "Diagramas (como UML) são ferramentas de modelagem, mas uma DSL é uma linguagem textual/de programação." }
+      ],
+      "correctAnswer": "É uma linguagem nova, com sua própria sintaxe e gramática, que precisa de um parser."
+    },
+    {
+      "id": 4,
+      "question": "Qual é o principal benefício de usar uma DSL para expressar regras de negócio?",
+      "options": [
+        { "text": "O código sempre executa mais rápido.", "justification": "Não necessariamente. O principal ganho não é em performance, mas em clareza." },
+        { "text": "Aumenta a clareza e permite que especialistas de domínio entendam (e até validem) a lógica.", "justification": "Correto! A DSL diminui a distância entre o problema de negócio e o código, melhorando a comunicação." },
+        { "text": "Elimina a necessidade de ter desenvolvedores seniores na equipe.", "justification": "Falso. Projetar e manter uma DSL é uma tarefa complexa que exige experiência." },
+        { "text": "Funciona para qualquer tipo de problema de software.", "justification": "DSLs são mais adequadas para domínios complexos com regras que mudam com frequência, não para todos os problemas." }
+      ],
+      "correctAnswer": "Aumenta a clareza e permite que especialistas de domínio entendam (e até validem) a lógica."
+    },
+    {
+      "id": 5,
+      "question": "Quando você é pressionado a dar uma estimativa para uma tarefa complexa imediatamente, qual a resposta mais pragmática?",
+      "options": [
+        { "text": "Dar um número alto para ter bastante margem de segurança.", "justification": "Embora pareça seguro, isso pode ser desonesto e prejudicar o planejamento. O ideal é ser transparente sobre a incerteza." },
+        { "text": "Pedir um tempo para analisar e quebrar a tarefa antes de dar uma resposta.", "justification": "Correto! A melhor estimativa vem da análise. É melhor pedir tempo do que chutar um número impreciso." },
+        { "text": "Dar a estimativa que o seu gerente quer ouvir.", "justification": "Isso cria expectativas irrealistas e quase sempre termina em atrasos e frustração." },
+        { "text": "Recusar-se a dar qualquer estimativa, pois elas estão sempre erradas.", "justification": "Embora estimativas tenham incerteza, elas são uma ferramenta de planejamento necessária. A recusa total não é colaborativa." }
+      ],
+      "correctAnswer": "Pedir um tempo para analisar e quebrar a tarefa antes de dar uma resposta."
+    },
+    {
+      "id": 6,
+      "question": "Ao dar uma estimativa, por que é importante usar a unidade correta (horas, dias, semanas)?",
+      "options": [
+        { "text": "Para parecer mais preciso e confiante do que você realmente está.", "justification": "Falso. O objetivo é o oposto: comunicar o nível de incerteza real." },
+        { "text": "A magnitude da unidade (horas, dias, semanas) comunica o nível de incerteza da estimativa.", "justification": "Correto! Estimar em 'horas' implica alta confiança, enquanto estimar em 'semanas' ou 'meses' sinaliza uma incerteza muito maior." },
+        { "text": "Porque a maioria das ferramentas de gerenciamento de projetos exige estimativas em horas.", "justification": "A ferramenta deve se adaptar à comunicação eficaz, não o contrário. O princípio é sobre a comunicação da incerteza." },
+        { "text": "Não é importante, qualquer unidade serve desde que o número esteja correto.", "justification": "A unidade é uma parte crucial da comunicação da estimativa e seu grau de confiança." }
+      ],
+      "correctAnswer": "A magnitude da unidade (horas, dias, semanas) comunica o nível de incerteza da estimativa."
+    },
+    {
+      "id": 7,
+      "question": "Qual a melhor forma de lidar com o fato de que estimativas são inerentemente incertas?",
+      "options": [
+        { "text": "Dar um número único e se comprometer com ele.", "justification": "Isso ignora a incerteza. O programador pragmático não se compromete com uma única resposta para uma pergunta ambígua." },
+        { "text": "Fornecer um intervalo de confiança (ex: 'entre 3 e 5 semanas') para gerenciar expectativas.", "justification": "Correto! Um intervalo comunica honestamente a incerteza e prepara os stakeholders para o melhor e o pior cenário." },
+        { "text": "Sempre dobrar a sua primeira estimativa.", "justification": "Essa é uma regra arbitrária e não uma técnica refinada. O ideal é entender a incerteza e comunicá-la com um intervalo." },
+        { "text": "Deixar que o gerente de projetos faça a estimativa.", "justification": "A estimativa de desenvolvimento deve vir de quem executa o trabalho, pois essa pessoa tem mais informações sobre a complexidade técnica." }
+      ],
+      "correctAnswer": "Fornecer um intervalo de confiança (ex: 'entre 3 e 5 semanas') para gerenciar expectativas."
+    },
+    {
+      "id": 8,
+      "question": "As notas Post-it são mencionadas como uma forma de prototipagem de baixa fidelidade. Qual sua principal vantagem nesse contexto?",
+      "options": [
+        { "text": "São digitais e podem ser facilmente compartilhadas por email.", "justification": "Falso. A natureza física dos Post-its é uma de suas características para colaboração presencial." },
+        { "text": "São extremamente rápidas para esboçar ideias e fáceis de reorganizar.", "justification": "Correto! A velocidade e a flexibilidade para mudar e refatorar fluxos ou arquiteturas são suas maiores vantagens." },
+        { "text": "Elas geram um código inicial automaticamente.", "justification": "Isso não é uma característica dos Post-its. Eles são uma ferramenta de ideação, não de geração de código." },
+        { "text": "São uma forma permanente de documentar a arquitetura.", "justification": "Pelo contrário, elas são valiosas por serem temporárias e fáceis de descartar e refazer." }
+      ],
+      "correctAnswer": "São extremamente rápidas para esboçar ideias e fáceis de reorganizar."
+    },
+    {
+      "id": 9,
+      "question": "Ruby on Rails usa código como `validates :name, presence: true` para definir regras de modelo. Este é um exemplo de qual tipo de DSL?",
+      "options": [
+        { "text": "DSL Externa, pois tem uma sintaxe própria.", "justification": "Incorreto. A sintaxe é, na verdade, código Ruby válido, mesmo que não pareça." },
+        { "text": "DSL Interna, pois utiliza a sintaxe da linguagem hospedeira (Ruby) para criar uma linguagem de domínio.", "justification": "Correto! É um exemplo clássico de como uma linguagem flexível pode ser usada para criar uma DSL expressiva." },
+        { "text": "Não é uma DSL, é apenas uma chamada de função normal.", "justification": "Embora tecnicamente seja uma chamada de método, a forma como é usada cria uma 'linguagem' para definir validações, sendo um exemplo de DSL interna." },
+        { "text": "DSL Visual, pois o resultado aparece na tela.", "justification": "Não há nada de visual na definição do código em si. É uma DSL textual." }
+      ],
+      "correctAnswer": "DSL Interna, pois utiliza a sintaxe da linguagem hospedeira (Ruby) para criar uma linguagem de domínio."
+    },
+    {
+      "id": 10,
+      "question": "Qual é a melhor maneira de melhorar suas habilidades de estimativa ao longo do tempo?",
+      "options": [
+        { "text": "Apenas ler livros sobre o assunto.", "justification": "A teoria ajuda, mas a prática é fundamental. Ler não é suficiente sem o ciclo de feedback." },
+        { "text": "Estimar, medir o tempo real gasto e comparar os dois para aprender com os desvios.", "justification": "Correto! Manter um registro das suas estimativas vs. o tempo real é a forma mais eficaz de identificar seus pontos cegos e calibrar suas futuras estimativas." },
+        { "text": "Perguntar sempre a um desenvolvedor mais sênior.", "justification": "Pedir ajuda é bom, mas isso não desenvolve sua própria habilidade de estimar." },
+        { "text": "Usar a mesma estimativa para todas as tarefas de tamanho parecido.", "justification": "Isso ignora as nuances e a complexidade de cada tarefa. Cada estimativa deve ser pensada individualmente." }
+      ],
+      "correctAnswer": "Estimar, medir o tempo real gasto e comparar os dois para aprender com os desvios."
+    }
+  ]
+}
