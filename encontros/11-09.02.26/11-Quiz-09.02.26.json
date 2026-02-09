@@ -1,0 +1,116 @@
+{
+  "title": "Quiz: O Programador Pragmático – Ferramentas Essenciais (Parte 2)",
+  "description": "Teste seus conhecimentos sobre o poder do texto simples, jogos de shell, edição avançada e controle de código-fonte do livro O Programador Pragmático.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Qual é a principal vantagem de usar texto simples para armazenar dados e configurações, segundo o livro?",
+      "options": [
+        { "text": "É mais rápido para ser processado por computadores.", "justification": "Embora possa ser eficiente, a principal vantagem reside na sua flexibilidade e longevidade, não apenas na velocidade de processamento." },
+        { "text": "Permite o uso de caracteres especiais e formatação complexa.", "justification": "Pelo contrário, o texto simples é caracterizado pela ausência de formatação complexa, focando na portabilidade." },
+        { "text": "É à prova de futuro, fácil de manipular com ferramentas padrão e universalmente compatível.", "justification": "Correto! Texto simples é durável, pode ser lido por qualquer ferramenta e é facilmente versionável, tornando-o 'à prova de futuro'." },
+        { "text": "Ocupa menos espaço em disco do que formatos binários.", "justification": "Nem sempre é o caso, e a economia de espaço não é a vantagem mais relevante destacada." }
+      ],
+      "correctAnswer": "É à prova de futuro, fácil de manipular com ferramentas padrão e universalmente compatível."
+    },
+    {
+      "id": 2,
+      "question": "O que o conceito de 'jogos de shell' enfatiza para o programador pragmático?",
+      "options": [
+        { "text": "A importância de desenvolver jogos complexos usando a linha de comando.", "justification": "Não se refere a desenvolver jogos, mas a usar a linha de comando de forma eficiente para tarefas do dia a dia." },
+        { "text": "A necessidade de programar exclusivamente em linguagens de script de shell.", "justification": "Enfatiza o domínio do shell, não a exclusividade de linguagens de script." },
+        { "text": "A arte de combinar pequenas ferramentas da linha de comando para realizar tarefas complexas.", "justification": "Correto! É sobre orquestrar comandos como 'grep', 'awk', 'sed', 'find' para construir pipelines poderosos e automatizar tarefas." },
+        { "text": "Decorar todos os comandos e opções possíveis de todos os utilitários de shell.", "justification": "O objetivo não é a memorização cega, mas a compreensão e a aplicação prática das ferramentas." }
+      ],
+      "correctAnswer": "A arte de combinar pequenas ferramentas da linha de comando para realizar tarefas complexas."
+    },
+    {
+      "id": 3,
+      "question": "Qual é um dos benefícios cruciais da 'edição avançada' para a produtividade do programador?",
+      "options": [
+        { "text": "Usar sempre a interface gráfica mais moderna disponível para o editor.", "justification": "A edição avançada foca em funcionalidades do editor, não necessariamente na interface gráfica." },
+        { "text": "A capacidade de automatizar tarefas repetitivas através de macros ou scripts do editor.", "justification": "Correto! Editors poderosos permitem que o programador economize tempo e evite erros em tarefas repetitivas, gravando e reproduzindo sequências de comandos." },
+        { "text": "Limitar-se a um único editor de texto para todas as linguagens de programação.", "justification": "Não há uma recomendação para se limitar a um único editor, mas sim para dominar um bom editor." },
+        { "text": "Focar apenas na digitação rápida, ignorando as funcionalidades do editor.", "justification": "A edição avançada busca otimizar além da digitação, usando as ferramentas do editor." }
+      ],
+      "correctAnswer": "A capacidade de automatizar tarefas repetitivas através de macros ou scripts do editor."
+    },
+    {
+      "id": 4,
+      "question": "Segundo o livro, qual é a principal função do 'Controle de Código-Fonte'?",
+      "options": [
+        { "text": "Apenas fazer backup do código em um servidor remoto.", "justification": "Backup é uma função secundária. O controle de versão é muito mais do que um backup." },
+        { "text": "Registrar todas as alterações do código, permitindo rastrear o histórico, reverter versões e colaborar de forma eficiente.", "justification": "Correto! É o coração do desenvolvimento colaborativo e da manutenção do software, garantindo um histórico completo e a capacidade de desfazer e mesclar alterações." },
+        { "text": "Compilar e testar automaticamente o código sempre que uma alteração é feita.", "justification": "Isso é função da Integração Contínua (CI), que se integra ao controle de versão, mas não é a função principal do controle de código-fonte em si." },
+        { "text": "Gerenciar as dependências de bibliotecas externas do projeto.", "justification": "Isso é feito por gerenciadores de pacotes, não pelo controle de código-fonte diretamente." }
+      ],
+      "correctAnswer": "Registrar todas as alterações do código, permitindo rastrear o histórico, reverter versões e colaborar de forma eficiente."
+    },
+    {
+      "id": 5,
+      "question": "Qual das seguintes afirmações sobre 'O poder do texto simples' está de acordo com a filosofia do Programador Pragmático?",
+      "options": [
+        { "text": "Dados binários são sempre preferíveis por sua eficiência.", "justification": "O livro advoga o texto simples pela sua flexibilidade e legibilidade, mesmo que dados binários possam ser mais eficientes em nichos específicos." },
+        { "text": "Textos simples são difíceis de versionar e comparar.", "justification": "Pelo contrário, texto simples é ideal para controle de versão, pois as diferenças são facilmente identificáveis." },
+        { "text": "Textos simples são a base para construir ferramentas de automação robustas e flexíveis.", "justification": "Correto! A facilidade de manipulação por scripts e outras ferramentas é uma grande vantagem do texto simples." },
+        { "text": "Apenas programadores iniciantes devem usar texto simples.", "justification": "É um princípio fundamental para programadores experientes também." }
+      ],
+      "correctAnswer": "Textos simples são a base para construir ferramentas de automação robustas e flexíveis."
+    },
+    {
+      "id": 6,
+      "question": "Ao usar 'jogos de shell', qual é uma prática recomendada para aumentar a eficiência?",
+      "options": [
+        { "text": "Sempre escrever scripts shell longos e complexos para qualquer tarefa.", "justification": "A ênfase é na combinação de pequenas ferramentas, não necessariamente em scripts longos. Muitas vezes, um pipeline simples resolve." },
+        { "text": "Evitar o uso de 'pipes' (`|`) para conectar comandos.", "justification": "Os pipes são essenciais para a filosofia de 'jogos de shell', permitindo que a saída de um comando seja a entrada de outro." },
+        { "text": "Aprender a usar o `man` para entender os comandos e suas opções.", "justification": "Correto! O `man` (manual) é uma ferramenta indispensável para explorar as capacidades de cada comando e utilizá-los de forma eficaz." },
+        { "text": "Executar comandos sem entender seu propósito completo, apenas copiando e colando.", "justification": "Essa é uma prática perigosa e não pragmática, pois pode levar a erros e falta de compreensão." }
+      ],
+      "correctAnswer": "Aprender a usar o `man` para entender os comandos e suas opções."
+    },
+    {
+      "id": 7,
+      "question": "Qual funcionalidade de um editor de texto avançado é particularmente útil para refatorar código?",
+      "options": [
+        { "text": "Suporte a múltiplos temas de cores.", "justification": "A personalização visual é estética, não diretamente ligada à refatoração." },
+        { "text": "Capacidade de abrir arquivos grandes instantaneamente.", "justification": "Útil em geral, mas não específico para refatoração." },
+        { "text": "Macros e expressões regulares para aplicar mudanças em massa de forma controlada.", "justification": "Correto! A habilidade de realizar buscas e substituições complexas com expressões regulares, ou gravar macros para aplicar uma série de edições em múltiplos locais, é extremamente poderosa para refatoração." },
+        { "text": "Verificação ortográfica para comentários.", "justification": "Útil para qualidade do texto, mas não para a estrutura do código." }
+      ],
+      "correctAnswer": "Macros e expressões regulares para aplicar mudanças em massa de forma controlada."
+    },
+    {
+      "id": 8,
+      "question": "Em relação ao 'Controle de Código-Fonte', o que significa realizar 'commits atômicos'?",
+      "options": [
+        { "text": "Fazer um único commit gigantesco no final de cada dia de trabalho.", "justification": "Isso é o oposto de um commit atômico e dificulta o rastreamento e a reversão de mudanças." },
+        { "text": "Dividir as alterações em unidades lógicas pequenas, focadas em uma única tarefa ou correção.", "justification": "Correto! Commits atômicos facilitam a revisão do código, a reversão de problemas específicos e o entendimento do histórico do projeto." },
+        { "text": "Comitar apenas arquivos que estão completamente livres de bugs.", "justification": "É ideal, mas a atomização se refere ao escopo da mudança, não necessariamente à ausência de bugs." },
+        { "text": "Usar apenas a linha de comando para fazer commits.", "justification": "A ferramenta de commit (linha de comando ou GUI) é irrelevante para o conceito de atomicidade." }
+      ],
+      "correctAnswer": "Dividir as alterações em unidades lógicas pequenas, focadas em uma única tarefa ou correção."
+    },
+    {
+      "id": 9,
+      "question": "Um programador pragmático que domina 'jogos de shell' provavelmente fará o quê para inspecionar logs de um servidor remoto?",
+      "options": [
+        { "text": "Abrir o arquivo de log inteiro em um editor gráfico grande para procurar manualmente.", "justification": "Isso seria ineficiente, especialmente para arquivos de log grandes. O shell oferece maneiras mais rápidas." },
+        { "text": "Baixar o arquivo de log completo via FTP e analisá-lo localmente.", "justification": "Pode ser feito, mas muitas vezes desnecessário e demorado. Ferramentas de shell permitem a análise direta no servidor." },
+        { "text": "Usar SSH para conectar ao servidor e combinar 'tail', 'grep' e 'less' para filtrar e visualizar o log.", "justification": "Correto! Esta é uma abordagem clássica e eficiente de 'jogos de shell' para analisar logs remotos de forma interativa e filtrada." },
+        { "text": "Pedir a um administrador de sistema para enviar apenas as partes relevantes do log por e-mail.", "justification": "Depender de terceiros para tarefas que podem ser feitas autonomamente não é pragmático." }
+      ],
+      "correctAnswer": "Usar SSH para conectar ao servidor e combinar 'tail', 'grep' e 'less' para filtrar e visualizar o log."
+    },
+    {
+      "id": 10,
+      "question": "Como o 'Controle de Código-Fonte' contribui para o princípio DRY (Don't Repeat Yourself) de forma indireta?",
+      "options": [
+        { "text": "Ele armazena apenas as diferenças entre os arquivos, evitando a duplicação de dados no repositório.", "justification": "Embora seja verdade que sistemas de controle de versão armazenam diferenças, o princípio DRY se refere à duplicação de conhecimento no código, não ao armazenamento interno do VCS." },
+        { "text": "Ao permitir o compartilhamento fácil de código entre desenvolvedores, reduzindo a necessidade de reescrever funcionalidades existentes.", "justification": "Correto! O controle de versão facilita a colaboração e a reutilização de código, evitando que diferentes desenvolvedores criem soluções idênticas para o mesmo problema." },
+        { "text": "Forçando os desenvolvedores a usar sempre a mesma linguagem de programação.", "justification": "O controle de versão é agnóstico à linguagem de programação." },
+        { "text": "Ele impede que os desenvolvedores façam copy-paste de código.", "justification": "Não impede diretamente, mas a facilidade de refatorar e compartilhar código reduz a tentação de copiar e colar." }
+      ],
+      "correctAnswer": "Ao permitir o compartilhamento fácil de código entre desenvolvedores, reduzindo a necessidade de reescrever funcionalidades existentes."
+    }
+  ]
+}
