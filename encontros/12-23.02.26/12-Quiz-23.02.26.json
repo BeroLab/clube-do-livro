@@ -1,0 +1,236 @@
+{
+  "title": "Quiz: O Programador Pragmático – Capítulo 3 (Parte 2)",
+  "description": "Avalie seus conhecimentos sobre Depuração, Manipulação de Texto e Geradores de Código baseados no Capítulo 3 do livro O Programador Pragmático.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "De acordo com o livro, qual deve ser a primeira reação de um programador ao encontrar um bug?",
+      "options": [
+        {
+          "text": "Culpar o compilador ou o sistema operacional.",
+          "justification": "O livro ensina que 'o select não está quebrado'; a falha quase certamente está no seu código."
+        },
+        {
+          "text": "Não entrar em pânico e focar em corrigir o problema, não a culpa.",
+          "justification": "Correto! A depuração exige calma e uma abordagem técnica, evitando ataques pessoais ou desespero."
+        },
+        {
+          "text": "Reescrever o módulo inteiro imediatamente.",
+          "justification": "Isso é drástico e não garante que você entendeu ou resolveu a causa raiz."
+        },
+        {
+          "text": "Pedir para outro desenvolvedor assumir a tarefa.",
+          "justification": "Assumir a responsabilidade pela depuração é parte do crescimento do programador."
+        }
+      ],
+      "correctAnswer": "Não entrar em pânico e focar em corrigir o problema, não a culpa."
+    },
+    {
+      "id": 2,
+      "question": "O que significa a frase 'The select isn't broken' (O select não está quebrado)?",
+      "options": [
+        {
+          "text": "Que a função de sistema 'select' do Unix nunca falha.",
+          "justification": "É uma analogia; embora ferramentas possam ter bugs, a probabilidade é muito maior de que o erro seja no código da aplicação."
+        },
+        {
+          "text": "Que você deve sempre desconfiar do seu próprio código antes de culpar as ferramentas básicas.",
+          "justification": "Correto! É um lembrete para verificar premissas básicas e lógica própria antes de assumir erros em bibliotecas ou compiladores."
+        },
+        {
+          "text": "Que consultas SQL (SELECT) devem ser a primeira coisa a ser verificada.",
+          "justification": "A frase refere-se à chamada de sistema 'select', não ao SQL."
+        },
+        {
+          "text": "Que o hardware é sempre a causa de bugs intermitentes.",
+          "justification": "Pelo contrário, o hardware é raramente o culpado em comparação com erros de lógica de software."
+        }
+      ],
+      "correctAnswer": "Que você deve sempre desconfiar do seu próprio código antes de culpar as ferramentas básicas."
+    },
+    {
+      "id": 3,
+      "question": "Qual é a técnica de 'Pato de Borracha' (Rubber Ducking)?",
+      "options": [
+        {
+          "text": "Um método de teste automatizado usando objetos fictícios.",
+          "justification": "Isso seriam 'mocks' ou 'stubs', não o pato de borracha."
+        },
+        {
+          "text": "Colocar um pato na mesa para decorar o ambiente de trabalho.",
+          "justification": "O objeto é apenas um meio para uma técnica psicológica de depuração."
+        },
+        {
+          "text": "Explicar o código ou o problema em voz alta para outra pessoa ou um objeto inanimado.",
+          "justification": "Correto! Ao explicar o fluxo lógico, muitas vezes o desenvolvedor percebe a falha na própria linha de raciocínio."
+        },
+        {
+          "text": "Esconder bugs propositalmente para testar a equipe de QA.",
+          "justification": "Isso não tem relação com a técnica mencionada no livro."
+        }
+      ],
+      "correctAnswer": "Explicar o código ou o problema em voz alta para outra pessoa ou um objeto inanimado."
+    },
+    {
+      "id": 4,
+      "question": "Por que a 'reprodução' de um bug é considerada o primeiro passo real para a correção?",
+      "options": [
+        {
+          "text": "Porque sem reproduzir o erro de forma consistente, você não pode ter certeza de que o corrigiu.",
+          "justification": "Correto! A correção de bugs 'fantasmagóricos' ou intermitentes sem um caso de teste claro é perigosa e imprecisa."
+        },
+        {
+          "text": "Para provar para o cliente que o bug realmente existe.",
+          "justification": "Embora ajude na comunicação, o objetivo técnico principal é validar a correção."
+        },
+        {
+          "text": "Para que o desenvolvedor possa culpar o ambiente de produção.",
+          "justification": "O foco deve ser a solução, não a transferência de culpa."
+        },
+        {
+          "text": "Porque é um requisito formal de todos os processos de desenvolvimento.",
+          "justification": "É uma necessidade prática da engenharia, independentemente de formalidades de processo."
+        }
+      ],
+      "correctAnswer": "Porque sem reproduzir o erro de forma consistente, você não pode ter certeza de que o corrigiu."
+    },
+    {
+      "id": 5,
+      "question": "O livro sugere que o texto puro (plain text) é a melhor forma de armazenar conhecimento porque...",
+      "options": [
+        {
+          "text": "É mais seguro e difícil de hackear.",
+          "justification": "Texto puro não tem relação direta com segurança por obscuridade."
+        },
+        {
+          "text": "Garante longevidade e permite que ferramentas diferentes processem a mesma informação.",
+          "justification": "Correto! Texto puro é universal, legível por humanos e não depende de formatos binários proprietários que podem desaparecer."
+        },
+        {
+          "text": "Ocupa muito menos espaço em disco que formatos binários.",
+          "justification": "Geralmente formatos binários compactados ocupam menos espaço, mas o texto ganha na interoperabilidade."
+        },
+        {
+          "text": "O compilador processa texto puro mais rápido que outros formatos.",
+          "justification": "A velocidade do compilador não é o motivo principal defendido pelo livro para o uso de texto puro."
+        }
+      ],
+      "correctAnswer": "Garante longevidade e permite que ferramentas diferentes processem a mesma informação."
+    },
+    {
+      "id": 6,
+      "question": "O que o livro quer dizer com ter uma linguagem de manipulação de texto como uma 'ferramenta de reflexo'?",
+      "options": [
+        {
+          "text": "Que você deve decorar todos os comandos da linguagem.",
+          "justification": "Não se trata de decoreba, mas de fluidez e aplicação prática."
+        },
+        {
+          "text": "Que a linguagem deve ser capaz de refletir a estrutura do banco de dados.",
+          "justification": "Isso é reflexão em linguagens de programação, um conceito diferente."
+        },
+        {
+          "text": "Que você deve ser capaz de criar scripts rápidos para automatizar tarefas de texto sem pensar muito.",
+          "justification": "Correto! Se você precisa processar dados manualmente, você perde tempo que poderia ser gasto criando."
+        },
+        {
+          "text": "Que a linguagem deve ser visual e fácil de usar.",
+          "justification": "Linguagens como Perl ou scripts de shell são textuais e exigem domínio técnico, não interfaces visuais."
+        }
+      ],
+      "correctAnswer": "Que você deve ser capaz de criar scripts rápidos para automatizar tarefas de texto sem pensar muito."
+    },
+    {
+      "id": 7,
+      "question": "Qual é a principal característica de um 'Gerador Ativo' de código?",
+      "options": [
+        {
+          "text": "Ele é executado apenas uma vez para criar a estrutura inicial.",
+          "justification": "Isso descreve um gerador passivo."
+        },
+        {
+          "text": "Ele faz parte do processo de build e gera código sempre que a fonte de verdade muda.",
+          "justification": "Correto! Ele garante que o código gerado esteja sempre sincronizado com o modelo ou configuração original."
+        },
+        {
+          "text": "Ele exige que o desenvolvedor edite o código gerado manualmente.",
+          "justification": "Pelo contrário, editar código de um gerador ativo é um erro, pois as mudanças serão sobrescritas no próximo build."
+        },
+        {
+          "text": "Ele só funciona se o desenvolvedor estiver ativamente digitando.",
+          "justification": "Geradores ativos são automatizados e integrados ao fluxo de compilação."
+        }
+      ],
+      "correctAnswer": "Ele faz parte do processo de build e gera código sempre que a fonte de verdade muda."
+    },
+    {
+      "id": 8,
+      "question": "Por que o livro alerta contra os 'Evil Wizards' (Magos Malignos)?",
+      "options": [
+        {
+          "text": "Porque eles consomem muita memória do computador.",
+          "justification": "O problema não é o consumo de recursos, mas a perda de controle sobre o código."
+        },
+        {
+          "text": "Porque eles podem introduzir vírus no sistema.",
+          "justification": "Não se trata de segurança contra malware, mas de integridade arquitetural."
+        },
+        {
+          "text": "Porque eles geram código que o desenvolvedor não entende e não consegue manter.",
+          "justification": "Correto! Se você depende de 'mágica' que não compreende, você terá problemas graves quando precisar depurar ou evoluir o sistema."
+        },
+        {
+          "text": "Porque o código gerado por eles é sempre muito lento.",
+          "justification": "A performance pode ser boa, mas o custo de manutenção e a falta de entendimento são os problemas reais."
+        }
+      ],
+      "correctAnswer": "Porque eles geram código que o desenvolvedor não entende e não consegue manter."
+    },
+    {
+      "id": 9,
+      "question": "Qual técnica de depuração é recomendada para encontrar o commit exato que introduziu um bug?",
+      "options": [
+        {
+          "text": "Busca Binária (usando ferramentas como git bisect).",
+          "justification": "Correto! Dividir o histórico ao meio permite encontrar a causa raiz em um log de commits extenso com o mínimo de esforço."
+        },
+        {
+          "text": "Análise Sintática.",
+          "justification": "Isso é o que o compilador faz para verificar a gramática do código, não para achar bugs de lógica no histórico."
+        },
+        {
+          "text": "Rubber Ducking.",
+          "justification": "Embora ajude a entender o problema, não é uma técnica específica para navegar no histórico de versões."
+        },
+        {
+          "text": "Teste de Unidade.",
+          "justification": "Testes de unidade validam o código atual, mas a busca binária no histórico foca em 'quando' e 'onde' o erro surgiu."
+        }
+      ],
+      "correctAnswer": "Busca Binária (usando ferramentas como git bisect)."
+    },
+    {
+      "id": 10,
+      "question": "Em relação aos geradores de código, qual é a recomendação do Programador Pragmático para manter o DRY?",
+      "options": [
+        {
+          "text": "Evitar geradores de código, pois eles sempre duplicam informação.",
+          "justification": "Pelo contrário, geradores bem usados ajudam a manter a representação única da verdade."
+        },
+        {
+          "text": "Usar geradores para criar múltiplas representações de uma única fonte de verdade.",
+          "justification": "Correto! Por exemplo, gerar código C++, documentação e esquemas SQL a partir de uma única definição de dados."
+        },
+        {
+          "text": "Duplicar o código manualmente para ter certeza de que ele está correto.",
+          "justification": "Isso viola o princípio DRY e aumenta o custo de manutenção."
+        },
+        {
+          "text": "Sempre usar geradores passivos em vez de ativos.",
+          "justification": "Geradores ativos são preferíveis para manter a consistência a longo prazo."
+        }
+      ],
+      "correctAnswer": "Usar geradores para criar múltiplas representações de uma única fonte de verdade."
+    }
+  ]
+}
