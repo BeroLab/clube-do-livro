@@ -1,7 +1,7 @@
 ---
 {
   "date": "23/02/2026",
-  "book": "O Programador Pragmático",
+  "book": "O Programador Pragmatico",
   "topic": "Capítulo 3: De 'Depurando' até 'Geradores de Código'"
 }
 ---
