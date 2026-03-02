@@ -1,0 +1,236 @@
+{
+  "title": "Quiz: O Programador Pragmático – Capítulo 4 (Parte 1)",
+  "description": "Avalie seus conhecimentos sobre Projeto por Contrato, Programas Mortos, Programação Assertiva e Exceções baseados no Capítulo 4 do livro O Programador Pragmático.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "No conceito de 'Projeto por Contrato' (DbC), qual é a responsabilidade do 'cliente' (quem chama a rotina)?",
+      "options": [
+        {
+          "text": "Garantir que as pós-condições sejam verdadeiras.",
+          "justification": "As pós-condições são responsabilidade do fornecedor (a rotina chamada)."
+        },
+        {
+          "text": "Satisfazer todas as pré-condições antes de chamar a rotina.",
+          "justification": "Correto! O cliente deve garantir que o estado inicial e os parâmetros atendam aos requisitos do contrato."
+        },
+        {
+          "text": "Verificar se as invariantes de classe foram mantidas.",
+          "justification": "Invariantes devem ser mantidas pelo fornecedor ao final da execução."
+        },
+        {
+          "text": "Tratar todas as exceções que a rotina possa lançar.",
+          "justification": "Embora o cliente trate exceções, o DbC foca em pré/pós-condições e invariantes como base do contrato."
+        }
+      ],
+      "correctAnswer": "Satisfazer todas as pré-condições antes de chamar a rotina."
+    },
+    {
+      "id": 2,
+      "question": "O que acontece em um 'Projeto por Contrato' se o cliente falha em cumprir uma pré-condição?",
+      "options": [
+        {
+          "text": "A rotina deve tentar corrigir o erro do cliente.",
+          "justification": "Isso viola o contrato; o fornecedor não deve ser responsável por dados de entrada inválidos definidos no contrato."
+        },
+        {
+          "text": "A rotina não deve ser executada e o erro deve ser apontado imediatamente.",
+          "justification": "Correto! Se o contrato é violado na entrada, o comportamento subsequente é indefinido e o programa deve falhar cedo."
+        },
+        {
+          "text": "O fornecedor deve retornar um valor padrão (como null ou 0).",
+          "justification": "Isso camufla o erro de lógica do cliente, violando a filosofia do DbC."
+        },
+        {
+          "text": "O compilador detectará o erro automaticamente em tempo de execução.",
+          "justification": "Nem todas as linguagens suportam DbC nativamente no compilador; muitas vezes é verificado via asserções ou lógica explícita."
+        }
+      ],
+      "correctAnswer": "A rotina não deve ser executada e o erro deve ser apontado imediatamente."
+    },
+    {
+      "id": 3,
+      "question": "Qual é o principal objetivo da filosofia 'Programas Mortos Não Contam Mentiras'?",
+      "options": [
+        {
+          "text": "Evitar que o programa trave em produção a qualquer custo.",
+          "justification": "O livro prega o oposto: é melhor travar do que continuar em um estado corrompido."
+        },
+        {
+          "text": "Garantir que o sistema falhe de forma controlada e termine o processo se algo 'impossível' acontecer.",
+          "justification": "Correto! Evita danos colaterais e facilita a descoberta da causa raiz ao 'falhar cedo'."
+        },
+        {
+          "text": "Remover todos os bugs antes de o programa ser executado.",
+          "justification": "Embora desejável, a filosofia foca em como o programa deve reagir a bugs que inevitavelmente ocorrem."
+        },
+        {
+          "text": "Logar o erro e continuar a execução para não afetar o usuário.",
+          "justification": "Continuar a execução em estado inválido pode corromper dados, o que é pior que um crash."
+        }
+      ],
+      "correctAnswer": "Garantir que o sistema falhe de forma controlada e termine o processo se algo 'impossível' acontecer."
+    },
+    {
+      "id": 4,
+      "question": "Por que o livro afirma que 'Um Crash é um Favor'?",
+      "options": [
+        {
+          "text": "Porque libera memória do sistema operacional.",
+          "justification": "O benefício não é de recursos, mas de integridade e diagnóstico."
+        },
+        {
+          "text": "Porque interrompe o programa antes que ele cause danos maiores, como corromper um banco de dados.",
+          "justification": "Correto! Um programa 'zumbi' executando com dados inválidos é muito mais perigoso que um programa parado."
+        },
+        {
+          "text": "Porque obriga o usuário a reiniciar o computador.",
+          "justification": "Reiniciar o computador não resolve o bug de software que causou o crash."
+        },
+        {
+          "text": "Porque permite que a equipe de suporte tenha mais trabalho.",
+          "justification": "O objetivo é qualidade técnica, não gerar volume de trabalho para o suporte."
+        }
+      ],
+      "correctAnswer": "Porque interrompe o programa antes que ele cause danos maiores, como corromper um banco de dados."
+    },
+    {
+      "id": 5,
+      "question": "Quando você deve usar 'Asserções' (Assertions) no seu código?",
+      "options": [
+        {
+          "text": "Para validar a entrada de dados do usuário na interface.",
+          "justification": "Dados de usuário são esperados como possivelmente inválidos; asserções são para coisas que 'nunca' devem acontecer."
+        },
+        {
+          "text": "Para verificar condições que representam bugs de lógica se forem falsas.",
+          "justification": "Correto! Asserções verificam suposições internas do desenvolvedor sobre o estado do sistema."
+        },
+        {
+          "text": "Para substituir blocos try-catch em toda a aplicação.",
+          "justification": "Asserções e exceções servem a propósitos diferentes; exceções tratam erros inesperados, asserções tratam erros impossíveis."
+        },
+        {
+          "text": "Para imprimir mensagens de debug no console.",
+          "justification": "Asserções servem para validar estado, não apenas para logging, e podem interromper o programa."
+        }
+      ],
+      "correctAnswer": "Para verificar condições que representam bugs de lógica se forem falsas."
+    },
+    {
+      "id": 6,
+      "question": "Qual é um erro comum ao usar asserções que o livro recomenda evitar?",
+      "options": [
+        {
+          "text": "Usar asserções demais, deixando o código lento.",
+          "justification": "O livro diz que o ganho em segurança geralmente supera o custo de performance."
+        },
+        {
+          "text": "Colocar código com 'efeitos colaterais' dentro de uma asserção.",
+          "justification": "Correto! Se a asserção for desativada em produção, o código de lógica de negócio dentro dela deixará de ser executado."
+        },
+        {
+          "text": "Escrever mensagens de erro muito longas nas asserções.",
+          "justification": "Mensagens descritivas são boas para o diagnóstico."
+        },
+        {
+          "text": "Usar asserções apenas durante a fase de desenvolvimento.",
+          "justification": "O livro recomenda manter as asserções ativas também em produção, se possível."
+        }
+      ],
+      "correctAnswer": "Colocar código com 'efeitos colaterais' dentro de uma asserção."
+    },
+    {
+      "id": 7,
+      "question": "De acordo com o livro, quando um erro deve ser tratado como uma 'Exceção'?",
+      "options": [
+        {
+          "text": "Sempre que uma função retornar um valor de erro.",
+          "justification": "Retornos de erro são fluxos normais; exceções são para o inesperado."
+        },
+        {
+          "text": "Apenas para eventos verdadeiramente excepcionais e inesperados.",
+          "justification": "Correto! Se o erro faz parte do fluxo lógico (ex: arquivo não encontrado ao buscar config), use fluxo normal; se o disco sumir, use exceção."
+        },
+        {
+          "text": "Para substituir comandos 'if' e 'else' e tornar o código mais limpo.",
+          "justification": "Usar exceções para controle de fluxo normal é considerado uma má prática (GOTO disfarçado)."
+        },
+        {
+          "text": "Sempre que o programador não souber como tratar o erro naquele momento.",
+          "justification": "Isso é apenas adiar o problema sem critério técnico."
+        }
+      ],
+      "correctAnswer": "Apenas para eventos verdadeiramente excepcionais e inesperados."
+    },
+    {
+      "id": 8,
+      "question": "O que o livro quer dizer com 'Exceções raramente devem ser parte da interface de um módulo'?",
+      "options": [
+        {
+          "text": "Que você nunca deve lançar exceções para outros módulos.",
+          "justification": "Elas podem ser lançadas, mas não devem ser o meio principal de comunicação de erros comuns."
+        },
+        {
+          "text": "Que os erros comuns devem ser tratados via retorno ou estado, deixando exceções para falhas catastróficas.",
+          "justification": "Correto! Isso mantém o acoplamento baixo e o fluxo de controle previsível."
+        },
+        {
+          "text": "Que exceções devem ser privadas e nunca documentadas.",
+          "justification": "Documentar exceções que podem ser lançadas é importante para quem consome o módulo."
+        },
+        {
+          "text": "Que a interface deve esconder todos os erros do usuário.",
+          "justification": "A interface técnica (API) deve comunicar erros, mas de forma apropriada ao contexto."
+        }
+      ],
+      "correctAnswer": "Que os erros comuns devem ser tratados via retorno ou estado, deixando exceções para falhas catastróficas."
+    },
+    {
+      "id": 9,
+      "question": "Qual é a 'Regra de Ouro' mencionada para decidir se algo deve ser uma exceção?",
+      "options": [
+        {
+          "text": "Se eu remover o tratador de exceção, o programa ainda funciona para casos normais?",
+          "justification": "Correto! Se o programa quebrar em um fluxo normal sem o `catch`, você está usando exceção para controle de fluxo."
+        },
+        {
+          "text": "Se o erro for difícil de depurar, ele deve ser uma exceção.",
+          "justification": "Dificuldade de depuração não define a natureza excepcional do erro."
+        },
+        {
+          "text": "Se o código rodar mais rápido com exceções, use-as.",
+          "justification": "Exceções geralmente são mais lentas que fluxos de controle normais."
+        },
+        {
+          "text": "Se o Java ou C# obrigarem a tratar, então é uma exceção.",
+          "justification": "Linguagens têm designs diferentes; a filosofia pragmática foca na intenção arquitetural."
+        }
+      ],
+      "correctAnswer": "Se eu remover o tratador de exceção, o programa ainda funciona para casos normais?"
+    },
+    {
+      "id": 10,
+      "question": "No DbC, o que é uma 'Invariante de Classe'?",
+      "options": [
+        {
+          "text": "Uma variável que nunca muda de valor.",
+          "justification": "Isso seria uma constante; a invariante é uma condição lógica sobre o estado."
+        },
+        {
+          "text": "Uma condição que deve ser verdadeira antes e depois de qualquer método público ser executado.",
+          "justification": "Correto! Ela garante a integridade do objeto ao longo de todo o seu ciclo de vida."
+        },
+        {
+          "text": "Um método que não pode ser sobrescrito por subclasses.",
+          "justification": "Isso seria um método 'final' ou 'sealed'."
+        },
+        {
+          "text": "Uma regra que só se aplica durante a criação do objeto.",
+          "justification": "Ela deve se manter verdadeira durante toda a vida útil do objeto."
+        }
+      ],
+      "correctAnswer": "Uma condição que deve ser verdadeira antes e depois de qualquer método público ser executado."
+    }
+  ]
+}
