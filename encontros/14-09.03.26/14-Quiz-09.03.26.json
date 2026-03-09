@@ -1,0 +1,236 @@
+{
+  "title": "Quiz: O Programador Pragmático – Encontro 14",
+  "description": "Avalie seus conhecimentos sobre Balanceamento de Recursos, Lei de Deméter e Metaprogramação baseados nos Capítulos 4 e 5 do livro O Programador Pragmático.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Qual é a regra fundamental da Dica 35 sobre o gerenciamento de recursos?",
+      "options": [
+        {
+          "text": "Aloque recursos apenas quando necessário.",
+          "justification": "A dica foca no encerramento do ciclo de vida do recurso, não apenas na alocação."
+        },
+        {
+          "text": "Acabe o que começou.",
+          "justification": "Correto! A rotina ou objeto que aloca um recurso deve ser responsável por desalocá-lo."
+        },
+        {
+          "text": "Deixe o coletor de lixo (Garbage Collector) cuidar da limpeza.",
+          "justification": "Recursos como arquivos e conexões de rede muitas vezes precisam de desalocação explícita e imediata."
+        },
+        {
+          "text": "Sempre aloque recursos globalmente para facilitar o acesso.",
+          "justification": "Variáveis globais aumentam o acoplamento e dificultam o rastreamento do ciclo de vida dos recursos."
+        }
+      ],
+      "correctAnswer": "Acabe o que começou."
+    },
+    {
+      "id": 2,
+      "question": "Ao lidar com múltiplos recursos aninhados, qual é a recomendação do livro para a desalocação?",
+      "options": [
+        {
+          "text": "Desalocar na mesma ordem em que foram alocados.",
+          "justification": "Isso pode deixar recursos órfãos se um recurso depender de outro alocado anteriormente."
+        },
+        {
+          "text": "Desalocar na ordem oposta à que foram alocados.",
+          "justification": "Correto! Isso garante que você não tente desalocar um recurso 'pai' antes do seu 'filho'."
+        },
+        {
+          "text": "Desalocar todos simultaneamente ao final do programa.",
+          "justification": "Recursos devem ser liberados assim que não forem mais necessários para evitar exaustão."
+        },
+        {
+          "text": "A ordem não importa, desde que todos sejam desalocados.",
+          "justification": "A ordem importa para evitar referências a objetos já destruídos e deadlocks."
+        }
+      ],
+      "correctAnswer": "Desalocar na ordem oposta à que foram alocados."
+    },
+    {
+      "id": 3,
+      "question": "Em Java, qual mecanismo é recomendado para garantir o equilíbrio de recursos na presença de exceções?",
+      "options": [
+        {
+          "text": "O método finalize().",
+          "justification": "O finalize() é imprevisível e não garante quando (ou se) será executado."
+        },
+        {
+          "text": "A cláusula finally.",
+          "justification": "Correto! O código dentro do finally tem execução garantida, ocorrendo ou não uma exceção."
+        },
+        {
+          "text": "O uso de ponteiros inteligentes.",
+          "justification": "Java não possui ponteiros inteligentes como C++; ele usa Garbage Collection."
+        },
+        {
+          "text": "Ignorar exceções até o fim da rotina.",
+          "justification": "Ignorar exceções é uma má prática que pode deixar o sistema em estado inconsistente."
+        }
+      ],
+      "correctAnswer": "A cláusula finally."
+    },
+    {
+      "id": 4,
+      "question": "Qual é o principal objetivo da 'Lei de Deméter para funções'?",
+      "options": [
+        {
+          "text": "Garantir que todos os métodos sejam públicos.",
+          "justification": "A lei foca na visibilidade e interação entre objetos, não apenas em modificadores de acesso."
+        },
+        {
+          "text": "Reduzir a vinculação (acoplamento) entre módulos de um programa.",
+          "justification": "Correto! Ela impede que você acesse um objeto para ganhar acesso a métodos de um terceiro objeto."
+        },
+        {
+          "text": "Obrigar o uso de herança múltipla.",
+          "justification": "A lei não trata de herança, mas de como métodos interagem com outros objetos."
+        },
+        {
+          "text": "Aumentar a performance do código através da delegação.",
+          "justification": "Seguir a Lei de Deméter pode, na verdade, ter um custo de performance devido aos métodos wrappers."
+        }
+      ],
+      "correctAnswer": "Reduzir a vinculação (acoplamento) entre módulos de um programa."
+    },
+    {
+      "id": 5,
+      "question": "De acordo com a Lei de Deméter, um método de um objeto 'O' PODE chamar métodos de:",
+      "options": [
+        {
+          "text": "Qualquer objeto global disponível no sistema.",
+          "justification": "Isso aumentaria drasticamente o acoplamento global."
+        },
+        {
+          "text": "Objetos retornados por outros métodos chamados dentro de 'O'.",
+          "justification": "Isso violaria a lei (ex: objeto.getA().getB()). Você só deve falar com seus vizinhos imediatos."
+        },
+        {
+          "text": "Qualquer objeto passado como parâmetro para o método.",
+          "justification": "Correto! Parâmetros passados são considerados 'vizinhos imediatos'."
+        },
+        {
+          "text": "Classes de terceiros importadas no cabeçalho do arquivo.",
+          "justification": "A lei foca nas instâncias de objetos com as quais o método interage em tempo de execução."
+        }
+      ],
+      "correctAnswer": "Qualquer objeto passado como parâmetro para o método."
+    },
+    {
+      "id": 6,
+      "question": "Qual é uma desvantagem prática de seguir rigorosamente a Lei de Deméter?",
+      "options": [
+        {
+          "text": "O código torna-se impossível de testar.",
+          "justification": "Pelo contrário, códigos menos acoplados são muito mais fáceis de testar com mocks."
+        },
+        {
+          "text": "A necessidade de criar muitos métodos 'encapsuladores' (wrappers) que apenas delegam chamadas.",
+          "justification": "Correto! Isso pode aumentar o volume de código e ter um pequeno custo de performance/espaço."
+        },
+        {
+          "text": "A perda de suporte a polimorfismo.",
+          "justification": "A lei não interfere na capacidade de usar polimorfismo."
+        },
+        {
+          "text": "A obrigatoriedade de usar apenas linguagens funcionais.",
+          "justification": "A Lei de Deméter é um conceito fundamentalmente orientado a objetos."
+        }
+      ],
+      "correctAnswer": "A necessidade de criar muitos métodos 'encapsuladores' (wrappers) que apenas delegam chamadas."
+    },
+    {
+      "id": 7,
+      "question": "O que o livro quer dizer com 'Dica 37: Configure, não integre'?",
+      "options": [
+        {
+          "text": "Que você deve usar arquivos de configuração apenas para cores de interface.",
+          "justification": "O livro sugere ir além de preferências visuais e configurar comportamentos e algoritmos."
+        },
+        {
+          "text": "Que escolhas como algoritmos e produtos de bancos de dados devem ser metadados, não códigos rígidos.",
+          "justification": "Correto! Isso torna o sistema adaptável sem necessidade de recompilação."
+        },
+        {
+          "text": "Que a integração contínua (CI) é menos importante que a configuração manual.",
+          "justification": "A dica não se refere a processos de CI/CD, mas à arquitetura do software."
+        },
+        {
+          "text": "Que o programador não deve escrever código novo, apenas configurar ferramentas prontas.",
+          "justification": "O objetivo é escrever código flexível que consuma metadados, não parar de programar."
+        }
+      ],
+      "correctAnswer": "Que escolhas como algoritmos e produtos de bancos de dados devem ser metadados, não códigos rígidos."
+    },
+    {
+      "id": 8,
+      "question": "Qual o benefício de colocar abstrações no código e detalhes em metadados (Dica 38)?",
+      "options": [
+        {
+          "text": "O código torna-se mais rápido em tempo de execução.",
+          "justification": "Ler metadados em tempo de execução pode ser ligeiramente mais lento que código compilado."
+        },
+        {
+          "text": "Permite personalizar o aplicativo sem precisar recompilá-lo.",
+          "justification": "Correto! Detalhes em metadados podem ser alterados facilmente e até em sistemas ativos."
+        },
+        {
+          "text": "Elimina a necessidade de fazer testes unitários.",
+          "justification": "O uso de metadados exige testes ainda mais rigorosos para garantir que diferentes configurações funcionem."
+        },
+        {
+          "text": "Reduz o tamanho total do executável do programa.",
+          "justification": "O benefício principal é a flexibilidade e o desacoplamento, não o tamanho do binário."
+        }
+      ],
+      "correctAnswer": "Permite personalizar o aplicativo sem precisar recompilá-lo."
+    },
+    {
+      "id": 9,
+      "question": "Segundo o texto sobre Metaprogramação, quando um programa deve ler sua configuração?",
+      "options": [
+        {
+          "text": "Apenas uma vez, durante a instalação.",
+          "justification": "Isso impediria qualquer mudança posterior sem reinstalar."
+        },
+        {
+          "text": "Idealmente, o programa deve poder recarregar a configuração enquanto é executado.",
+          "justification": "Correto! Especialmente para processos de longa duração (servidores), isso oferece máxima flexibilidade."
+        },
+        {
+          "text": "A cada milissegundo, para garantir que está atualizado.",
+          "justification": "Isso causaria um gargalo de performance desnecessário."
+        },
+        {
+          "text": "Apenas quando o desenvolvedor der permissão via código.",
+          "justification": "O sistema deve ser projetado para ser dinâmico por natureza conforme a necessidade do negócio."
+        }
+      ],
+      "correctAnswer": "Idealmente, o programa deve poder recarregar a configuração enquanto é executado."
+    },
+    {
+      "id": 10,
+      "question": "Por que o livro compara códigos não adaptáveis ao pássaro 'Dodó'?",
+      "options": [
+        {
+          "text": "Porque o Dodó era um pássaro muito rápido, assim como o código pragmático.",
+          "justification": "O Dodó era conhecido por ser lento e incapaz de voar."
+        },
+        {
+          "text": "Porque códigos sem metadados são 'estúpidos' como o Dodó.",
+          "justification": "O ponto central não é a inteligência, mas a capacidade de adaptação ao ambiente."
+        },
+        {
+          "text": "Porque no mundo real (e no software), as espécies que não se adaptam morrem.",
+          "justification": "Correto! Se o código for rígido demais para mudar frente às novas exigências, ele se tornará obsoleto e será 'extinto'."
+        },
+        {
+          "text": "Porque o Dodó foi a primeira espécie a usar metadados.",
+          "justification": "Esta é uma afirmação sem sentido histórico ou técnico."
+        }
+      ],
+      "correctAnswer": "Porque no mundo real (e no software), as espécies que não se adaptam morrem."
+    }
+  ]
+}
