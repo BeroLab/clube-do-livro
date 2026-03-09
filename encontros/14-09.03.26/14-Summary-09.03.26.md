@@ -2,7 +2,7 @@
 {
   "date": "09/03/2026",
   "book": "O Programador Pragmatico",
-  "topic": "Capítulo 4 e 5 - de 'Como balancear recursos' até 'Metaprogramação'",
+  "topic": "Capítulo 4 e 5 - de 'Como balancear recursos' até 'Metaprogramação'"
 }
 ---
 
