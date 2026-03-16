@@ -1,0 +1,236 @@
+{
+  "title": "Quiz: O Programador Pragmático – Encontro 15",
+  "description": "Avalie seus conhecimentos sobre Vinculação Temporal, MVC e Quadros-negros baseados no Capítulo 5 do livro O Programador Pragmático.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "O que o livro define como 'Vinculação Temporal'?",
+      "options": [
+        {
+          "text": "A dependência de um cronograma rigoroso de entrega de software.",
+          "justification": "O livro foca no tempo como elemento de projeto do software, não no cronograma de prazos."
+        },
+        {
+          "text": "A vinculação do software a dependências de tempo ou ordem de execução.",
+          "justification": "Correto! Trata-se de assumir que o Método A deve sempre vir antes do B de forma linear."
+        },
+        {
+          "text": "O uso de datas e horas em bancos de dados relacionais.",
+          "justification": "Vinculação temporal refere-se ao design da lógica e não ao armazenamento de datas."
+        },
+        {
+          "text": "A expiração de licenças de software após um período determinado.",
+          "justification": "Este é um conceito de licenciamento, não de arquitetura de software."
+        }
+      ],
+      "correctAnswer": "A vinculação do software a dependências de tempo ou ordem de execução."
+    },
+    {
+      "id": 2,
+      "question": "Qual ferramenta o livro sugere para analisar fluxos de trabalho e identificar paralelismo?",
+      "options": [
+        {
+          "text": "Diagramas de Classes UML.",
+          "justification": "Diagramas de classes mostram estrutura estática, não fluxo de atividades."
+        },
+        {
+          "text": "Diagramas de Atividades UML.",
+          "justification": "Correto! Eles ajudam a visualizar o que pode ocorrer ao mesmo tempo e o que exige ordem rigorosa."
+        },
+        {
+          "text": "Diagramas de Entidade-Relacionamento (ERD).",
+          "justification": "Estes diagramas são usados para modelagem de dados."
+        },
+        {
+          "text": "Cronômetros de precisão em tempo real.",
+          "justification": "A análise é feita no design do fluxo, não apenas medindo o tempo de execução."
+        }
+      ],
+      "correctAnswer": "Diagramas de Atividades UML."
+    },
+    {
+      "id": 3,
+      "question": "No 'Modelo do Consumidor Faminto', como o balanceamento de carga é realizado?",
+      "options": [
+        {
+          "text": "Um agendador central atribui tarefas específicas para cada processo.",
+          "justification": "Neste modelo, o agendador central é substituído por tarefas independentes que buscam trabalho."
+        },
+        {
+          "text": "Cada processo busca uma nova tarefa em uma fila central assim que termina a anterior.",
+          "justification": "Correto! Isso permite que cada componente processe em seu próprio ritmo, desvinculado dos outros."
+        },
+        {
+          "text": "O banco de dados decide qual processo deve receber a próxima transação.",
+          "justification": "A lógica de 'puxar' o trabalho vem dos consumidores, não do banco de dados."
+        },
+        {
+          "text": "As tarefas são divididas igualmente no início da execução do programa.",
+          "justification": "Isso seria uma divisão estática; o modelo do consumidor faminto é dinâmico."
+        }
+      ],
+      "correctAnswer": "Cada processo busca uma nova tarefa em uma fila central assim que termina a anterior."
+    },
+    {
+      "id": 4,
+      "question": "Por que o livro recomenda projetar pensando na concorrência mesmo para códigos lineares?",
+      "options": [
+        {
+          "text": "Porque a concorrência torna o código mais rápido automaticamente.",
+          "justification": "A concorrência mal projetada pode, na verdade, degradar a performance."
+        },
+        {
+          "text": "Porque força o programador a criar interfaces mais limpas e estados válidos consistentes.",
+          "justification": "Correto! Evita suposições de ordem que levam a 'programação baseada no acaso'."
+        },
+        {
+          "text": "Porque linguagens modernas não permitem mais códigos lineares.",
+          "justification": "Linguagens modernas permitem ambos; a escolha é arquitetural."
+        },
+        {
+          "text": "Porque o compilador exige que todas as funções sejam 'thread-safe'.",
+          "justification": "A maioria dos compiladores não impõe segurança de threads automaticamente."
+        }
+      ],
+      "correctAnswer": "Porque força o programador a criar interfaces mais limpas e estados válidos consistentes."
+    },
+    {
+      "id": 5,
+      "question": "No padrão Model-View-Controller (MVC), qual é a principal característica do 'Modelo'?",
+      "options": [
+        {
+          "text": "Ele é responsável por desenhar os botões na tela.",
+          "justification": "Isso é responsabilidade da Visualização (View)."
+        },
+        {
+          "text": "Ele contém os dados e a lógica, sem conhecimento direto de nenhuma visualização.",
+          "justification": "Correto! O modelo é a abstração central desvinculada da interface."
+        },
+        {
+          "text": "Ele gerencia as entradas de teclado e mouse do usuário.",
+          "justification": "Isso é responsabilidade do Controlador (Controller)."
+        },
+        {
+          "text": "Ele serve apenas como um banco de dados temporário para a aplicação.",
+          "justification": "O modelo também contém as operações e a lógica para manipular esses dados."
+        }
+      ],
+      "correctAnswer": "Ele contém os dados e a lógica, sem conhecimento direto de nenhuma visualização."
+    },
+    {
+      "id": 6,
+      "question": "Qual é um benefício de separar visualizações de modelos (Dica 42)?",
+      "options": [
+        {
+          "text": "Permite suportar várias visualizações diferentes para o mesmo modelo de dados.",
+          "justification": "Correto! Você pode ter uma planilha, um gráfico e um relatório usando o mesmo modelo."
+        },
+        {
+          "text": "Elimina a necessidade de ter uma interface de usuário gráfica.",
+          "justification": "O MVC pode ser usado com ou sem interface gráfica, mas sua separação não a 'elimina'."
+        },
+        {
+          "text": "Garante que os dados nunca sejam alterados por acidente.",
+          "justification": "O MVC organiza o acesso, mas a integridade dos dados depende da lógica do modelo."
+        },
+        {
+          "text": "Torna o código mais difícil de manter devido ao excesso de classes.",
+          "justification": "Embora aumente o número de classes, o objetivo é facilitar a manutenção pelo desacoplamento."
+        }
+      ],
+      "correctAnswer": "Permite suportar várias visualizações diferentes para o mesmo modelo de dados."
+    },
+    {
+      "id": 7,
+      "question": "O MVC pode ser aplicado além de interfaces gráficas (GUIs)?",
+      "options": [
+        {
+          "text": "Não, o MVC é estritamente para desenvolvimento de interfaces de usuário.",
+          "justification": "O livro mostra exemplos de MVC aplicados a fluxos de dados e notificações."
+        },
+        {
+          "text": "Sim, a visualização pode ser qualquer interpretação do modelo e o controlador um mecanismo de coordenação.",
+          "justification": "Correto! O exemplo do beisebol ilustra como modelos geram visualizações para teleprompters e web."
+        },
+        {
+          "text": "Apenas se o sistema for escrito em Java ou Smalltalk.",
+          "justification": "O MVC é um padrão arquitetural independente de linguagem."
+        },
+        {
+          "text": "Sim, mas apenas em sistemas que usam bancos de dados SQL.",
+          "justification": "O tipo de armazenamento não restringe o uso do padrão MVC."
+        }
+      ],
+      "correctAnswer": "Sim, a visualização pode ser qualquer interpretação do modelo e o controlador um mecanismo de coordenação."
+    },
+    {
+      "id": 8,
+      "question": "Qual é a principal metáfora usada para descrever o modelo de 'Quadro-negro'?",
+      "options": [
+        {
+          "text": "Uma sala de aula onde o professor ensina os alunos.",
+          "justification": "A metáfora correta envolve coordenação de especialistas, não ensino linear."
+        },
+        {
+          "text": "Uma investigação policial onde detetives postam descobertas de forma independente.",
+          "justification": "Correto! Cada agente contribui com o que sabe sem precisar conhecer os outros agentes."
+        },
+        {
+          "text": "Um sistema de arquivos onde apenas um usuário pode escrever por vez.",
+          "justification": "O quadro-negro foca em contribuições concorrentes e assíncronas."
+        },
+        {
+          "text": "Uma fila de banco onde todos esperam sua vez.",
+          "justification": "Filas são lineares; o quadro-negro é um fórum de troca de informações."
+        }
+      ],
+      "correctAnswer": "Uma investigação policial onde detetives postam descobertas de forma independente."
+    },
+    {
+      "id": 9,
+      "question": "Qual é a vantagem de um sistema de 'Quadro-negro' em relação ao acoplamento?",
+      "options": [
+        {
+          "text": "Aumenta o acoplamento para garantir que todos os dados cheguem juntos.",
+          "justification": "O quadro-negro visa justamente o oposto: o desacoplamento total."
+        },
+        {
+          "text": "Desvincula os objetos completamente, permitindo troca de dados anônima e assíncrona.",
+          "justification": "Correto! Consumidores e produtores não precisam saber da existência uns dos outros."
+        },
+        {
+          "text": "Exige que todos os objetos herdem da mesma classe base 'Quadro'.",
+          "justification": "A independência é mantida através da interface do quadro-negro, não por herança rígida."
+        },
+        {
+          "text": "Garante que os dados sejam processados apenas por um agente centralizado.",
+          "justification": "O modelo favorece múltiplos agentes independentes agindo sobre os dados."
+        }
+      ],
+      "correctAnswer": "Desvincula os objetos completamente, permitindo troca de dados anônima e assíncrona."
+    },
+    {
+      "id": 10,
+      "question": "Para qual tipo de problema o modelo de Quadro-negro é especialmente adequado?",
+      "options": [
+        {
+          "text": "Cálculos matemáticos simples e sequenciais.",
+          "justification": "Processos lineares e simples não se beneficiam da complexidade do quadro-negro."
+        },
+        {
+          "text": "Problemas onde a ordem dos dados é imprevisível e há agentes distribuídos.",
+          "justification": "Correto! Como no exemplo de processamento de hipotecas com múltiplas fontes de dados."
+        },
+        {
+          "text": "Apenas para sistemas de reconhecimento de voz legados.",
+          "justification": "Embora tenha nascido na IA, o modelo é aplicável a fluxos de trabalho modernos e sistemas distribuídos."
+        },
+        {
+          "text": "Criação de sites estáticos com pouco tráfego.",
+          "justification": "O quadro-negro é uma ferramenta para coordenação complexa, subutilizada em sites estáticos."
+        }
+      ],
+      "correctAnswer": "Problemas onde a ordem dos dados é imprevisível e há agentes distribuídos."
+    }
+  ]
+}
