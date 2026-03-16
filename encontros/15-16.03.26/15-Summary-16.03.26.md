@@ -1,7 +1,7 @@
 ---
 {
   "date": "16/03/2026",
-  "book": "O Programador Pragmático",
+  "book": "O Programador Pragmatico",
   "topic": "Capítulo 5 - de 'Vinculação Temporal' até 'Quadros-negros'"
 }
 ---
