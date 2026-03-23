@@ -1,0 +1,236 @@
+{
+  "title": "Quiz: O Programador Pragmático – Encontro 16",
+  "description": "Avalie seus conhecimentos sobre Programação Deliberada, Algoritmos, Refatoração, Testes e Assistentes baseados no Capítulo 6 do livro O Programador Pragmático.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "O que caracteriza a 'Programação Baseada no Acaso'?",
+      "options": [
+        {
+          "text": "Escrever código sem usar um ambiente de desenvolvimento integrado (IDE).",
+          "justification": "A ferramenta utilizada não define se a programação é baseada no acaso ou deliberada."
+        },
+        {
+          "text": "Confiar em sucessos acidentais sem entender por que o código realmente funciona.",
+          "justification": "Correto! É o caso de Fred, que digita código e 'parece' funcionar, mas ele não sabe o motivo."
+        },
+        {
+          "text": "Usar geradores de números aleatórios para testar a lógica do programa.",
+          "justification": "Testes aleatórios são uma técnica válida; a programação por acaso refere-se à falta de compreensão da lógica."
+        },
+        {
+          "text": "Seguir rigorosamente um plano de projeto definido por um arquiteto.",
+          "justification": "Seguir um plano é o oposto de programar por acaso; é uma forma de programação deliberada."
+        }
+      ],
+      "correctAnswer": "Confiar em sucessos acidentais sem entender por que o código realmente funciona."
+    },
+    {
+      "id": 2,
+      "question": "Qual é um exemplo de 'Acidente de Implementação' mencionado no livro?",
+      "options": [
+        {
+          "text": "Documentar todas as suposições feitas durante o desenvolvimento.",
+          "justification": "Documentar suposições é uma prática recomendada para programação deliberada."
+        },
+        {
+          "text": "Seguir os padrões de codificação da equipe para garantir a consistência.",
+          "justification": "Padrões de codificação ajudam a evitar acidentes e promovem a clareza."
+        },
+        {
+          "text": "Confiar em comportamentos não documentados ou efeitos colaterais de uma biblioteca.",
+          "justification": "Correto! Você se baseia em algo que 'por acaso' funciona daquela forma na versão atual."
+        },
+        {
+          "text": "Escrever testes de unidade para cada nova funcionalidade implementada.",
+          "justification": "Testes de unidade são ferramentas para validar o comportamento e evitar acidentes."
+        }
+      ],
+      "correctAnswer": "Confiar em comportamentos não documentados ou efeitos colaterais de uma biblioteca."
+    },
+    {
+      "id": 3,
+      "question": "De acordo com a Dica 45, o que um programador deve fazer antes de codificar?",
+      "options": [
+        {
+          "text": "Estimar a ordem (O()) de seus algoritmos para entender como eles escalam.",
+          "justification": "Correto! É essencial ter uma ideia do consumo de recursos (tempo/memória) antes da implementação."
+        },
+        {
+          "text": "Comprar o computador mais rápido disponível no mercado.",
+          "justification": "Hardware rápido pode mascarar algoritmos ruins, mas não resolve o problema de escalabilidade."
+        },
+        {
+          "text": "Memorizar todas as fórmulas matemáticas de cálculo integral.",
+          "justification": "Embora a matemática ajude, o foco da dica é a análise prática da complexidade algorítmica."
+        },
+        {
+          "text": "Pedir permissão ao cliente para usar loops aninhados.",
+          "justification": "A escolha de algoritmos é uma decisão técnica do desenvolvedor, não uma questão de permissão do cliente."
+        }
+      ],
+      "correctAnswer": "Estimar a ordem (O()) de seus algoritmos para entender como eles escalam."
+    },
+    {
+      "id": 4,
+      "question": "Um algoritmo que divide sua entrada em duas metades a cada passo (como a busca binária) é geralmente de que ordem?",
+      "options": [
+        {
+          "text": "O(n) - Linear.",
+          "justification": "Algoritmos lineares percorrem cada elemento da entrada uma vez."
+        },
+        {
+          "text": "O(n²) - Quadrática.",
+          "justification": "Algoritmos quadráticos geralmente envolvem loops aninhados sobre a entrada."
+        },
+        {
+          "text": "O(1) - Constante.",
+          "justification": "Algoritmos constantes levam o mesmo tempo independentemente do tamanho da entrada."
+        },
+        {
+          "text": "O(lg(n)) - Logarítmica.",
+          "justification": "Correto! Divisões sucessivas por dois resultam em complexidade logarítmica."
+        }
+      ],
+      "correctAnswer": "O(lg(n)) - Logarítmica."
+    },
+    {
+      "id": 5,
+      "question": "Qual metáfora o livro usa para descrever o desenvolvimento de software em oposição à construção civil?",
+      "options": [
+        {
+          "text": "Cozinhar uma refeição complexa.",
+          "justification": "Embora envolva passos, a metáfora da culinária não é a principal para a evolução do código."
+        },
+        {
+          "text": "Jardinagem.",
+          "justification": "Correto! O software é orgânico, precisa ser podado, replantado e cuidado constantemente."
+        },
+        {
+          "text": "Pilotar um avião em modo automático.",
+          "justification": "O livro menciona que codificar exige atenção constante, ao contrário do piloto automático."
+        },
+        {
+          "text": "Montar um quebra-cabeça de mil peças.",
+          "justification": "Software muda e evolui; um quebra-cabeça tem uma forma final estática."
+        }
+      ],
+      "correctAnswer": "Jardinagem."
+    },
+    {
+      "id": 6,
+      "question": "Quando é o melhor momento para realizar a refatoração, segundo o livro?",
+      "options": [
+        {
+          "text": "Apenas após o término total do projeto.",
+          "justification": "Adiar a refatoração aumenta o custo e o risco, como um tumor que cresce."
+        },
+        {
+          "text": "Nunca, pois 'se está funcionando, não mexa'.",
+          "justification": "Este pensamento leva à entropia do software e a janelas quebradas."
+        },
+        {
+          "text": "Cedo e sempre, assim que notar que algo pode ser melhorado.",
+          "justification": "Correto! A Dica 47 diz: 'Refatore cedo, refatore sempre'."
+        },
+        {
+          "text": "Somente quando o cliente reclamar da lentidão do sistema.",
+          "justification": "A refatoração também serve para melhorar a estrutura e manutenibilidade, não apenas performance."
+        }
+      ],
+      "correctAnswer": "Cedo e sempre, assim que notar que algo pode ser melhorado."
+    },
+    {
+      "id": 7,
+      "question": "Qual é a regra de ouro ao refatorar sem causar danos, segundo Martin Fowler?",
+      "options": [
+        {
+          "text": "Sempre adicione pelo menos uma funcionalidade nova enquanto refatora.",
+          "justification": "Pelo contrário, Fowler recomenda NÃO misturar refatoração com novas funcionalidades."
+        },
+        {
+          "text": "Certifique-se de ter bons testes antes de começar e execute-os com frequência.",
+          "justification": "Correto! Os testes de regressão são a chave para refatorar com confiança."
+        },
+        {
+          "text": "Reescreva todo o módulo do zero para garantir que fique perfeito.",
+          "justification": "Refatoração envolve passos curtos e deliberados, não necessariamente reescrita total."
+        },
+        {
+          "text": "Mude todos os nomes de variáveis para suas iniciais para economizar espaço.",
+          "justification": "Isso prejudica a legibilidade e não é o objetivo da refatoração."
+        }
+      ],
+      "correctAnswer": "Certifique-se de ter bons testes antes de começar e execute-os com frequência."
+    },
+    {
+      "id": 8,
+      "question": "O que o livro quer dizer com 'Projete para Testar' (Dica 48)?",
+      "options": [
+        {
+          "text": "Contratar uma equipe de QA antes de começar a codificar.",
+          "justification": "Embora QA seja importante, a dica foca na responsabilidade do desenvolvedor ao projetar o código."
+        },
+        {
+          "text": "Garantir que o código tenha muitos comentários explicando o que testar.",
+          "justification": "Comentários não substituem a testabilidade intrínseca do design do software."
+        },
+        {
+          "text": "Usar apenas linguagens que tenham compiladores que testam a lógica.",
+          "justification": "Compiladores testam sintaxe e tipos, mas a lógica de negócio exige testes de unidade."
+        },
+        {
+          "text": "Construir a capacidade de teste no software desde o início, considerando contratos e limites.",
+          "justification": "Correto! Pensar no teste ajuda a evitar erros e a definir melhor as interfaces."
+        }
+      ],
+      "correctAnswer": "Construir a capacidade de teste no software desde o início, considerando contratos e limites."
+    },
+    {
+      "id": 9,
+      "question": "Qual é o principal risco de usar 'Assistentes' (Wizards) para gerar código?",
+      "options": [
+        {
+          "text": "Eles tornam o processo de desenvolvimento muito lento.",
+          "justification": "Assistentes são geralmente rápidos; o risco é a falta de compreensão do código gerado."
+        },
+        {
+          "text": "O código gerado pode conter vírus de computador ocultos.",
+          "justification": "Embora segurança seja importante, o risco enfatizado é a 'programação baseada no acaso'."
+        },
+        {
+          "text": "Não entender o código produzido, perdendo o controle sobre o aplicativo.",
+          "justification": "Correto! Se você não entende o código, não saberá como depurá-lo ou adaptá-lo."
+        },
+        {
+          "text": "Assistentes funcionam apenas em sistemas operacionais antigos.",
+          "justification": "Muitas ferramentas modernas ainda utilizam assistentes para gerar código esqueleto."
+        }
+      ],
+      "correctAnswer": "Não entender o código produzido, perdendo o controle sobre o aplicativo."
+    },
+    {
+      "id": 10,
+      "question": "Por que o livro afirma que 'o melhor nem sempre é o melhor' ao escolher algoritmos?",
+      "options": [
+        {
+          "text": "Porque o algoritmo mais rápido pode ser complexo demais para pequenos conjuntos de dados.",
+          "justification": "Correto! Uma classificação simples pode ser melhor do que uma complexa para poucos itens."
+        },
+        {
+          "text": "Porque algoritmos lentos são mais fáceis de cobrar por hora do cliente.",
+          "justification": "Esta é uma prática antiética e não tem relação com o pragmatismo técnico."
+        },
+        {
+          "text": "Porque o compilador sempre otimiza algoritmos ruins automaticamente.",
+          "justification": "Otimizações de compilador ajudam, mas não transformam um algoritmo O(n²) em O(lg(n))."
+        },
+        {
+          "text": "Porque usar algoritmos conhecidos pode causar problemas de direitos autorais.",
+          "justification": "A escolha de algoritmos baseia-se em eficiência e adequação ao problema, não apenas em copyright."
+        }
+      ],
+      "correctAnswer": "Porque o algoritmo mais rápido pode ser complexo demais para pequenos conjuntos de dados."
+    }
+  ]
+}
