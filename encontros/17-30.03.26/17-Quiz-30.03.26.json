@@ -1,0 +1,236 @@
+{
+  "title": "Quiz: O Programador Pragmático – Encontro 17",
+  "description": "Avalie seus conhecimentos sobre Requisitos, Problemas Impossíveis, Instinto no Desenvolvimento, Especificações e Metodologias Formais baseados no Capítulo 7 do livro O Programador Pragmático.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Por que o livro recomenda 'cavar' requisitos em vez de 'coletar'?",
+      "options": [
+        {
+          "text": "Porque os requisitos estão frequentemente enterrados sob suposições, política e concepções erradas.",
+          "justification": "Correto! A palavra 'coletar' implica que os requisitos estão na superfície, mas raramente estão."
+        },
+        {
+          "text": "Porque os usuários costumam mentir sobre o que precisam.",
+          "justification": "Os usuários não mentem; eles simplesmente não sabem expressar com precisão o que precisam."
+        },
+        {
+          "text": "Porque cavar é mais rápido do que coletar em termos de tempo de projeto.",
+          "justification": "A metáfora não é sobre velocidade, mas sobre a profundidade do esforço necessário para entender os requisitos reais."
+        },
+        {
+          "text": "Porque apenas analistas certificados têm permissão de coletar requisitos.",
+          "justification": "O livro não faz distinção de certificação; o foco é na profundidade da investigação."
+        }
+      ],
+      "correctAnswer": "Porque os requisitos estão frequentemente enterrados sob suposições, política e concepções erradas."
+    },
+    {
+      "id": 2,
+      "question": "Qual é a diferença entre um requisito e uma política de negócio, segundo o livro?",
+      "options": [
+        {
+          "text": "Requisitos são escritos por desenvolvedores; políticas são escritas por gerentes.",
+          "justification": "A distinção não é sobre quem escreve, mas sobre o nível de abstração e estabilidade."
+        },
+        {
+          "text": "Não há diferença: toda política é um requisito e vice-versa.",
+          "justification": "O livro faz uma distinção clara: políticas mudam com frequência e não devem ser embutidas como requisitos absolutos."
+        },
+        {
+          "text": "O requisito é a necessidade abstrata e estável; a política é a regra atual de como atendê-la, podendo mudar.",
+          "justification": "Correto! Ex.: 'usuários autorizados podem ver registros' é requisito; 'só o RH pode ver' é política."
+        },
+        {
+          "text": "Políticas são requisitos não funcionais relacionados a desempenho.",
+          "justification": "Políticas de negócio são regras organizacionais, não métricas de performance."
+        }
+      ],
+      "correctAnswer": "O requisito é a necessidade abstrata e estável; a política é a regra atual de como atendê-la, podendo mudar."
+    },
+    {
+      "id": 3,
+      "question": "Por que o livro sugere que o desenvolvedor se torne um usuário durante a coleta de requisitos?",
+      "options": [
+        {
+          "text": "Para reduzir os custos com a equipe de UX.",
+          "justification": "O objetivo não é cortar custos, mas ganhar compreensão real do problema."
+        },
+        {
+          "text": "Para entender como o sistema será realmente usado e construir empatia e confiança com os usuários.",
+          "justification": "Correto! Trabalhar lado a lado com o usuário revela uma realidade que nenhum documento captura."
+        },
+        {
+          "text": "Para provar ao cliente que os desenvolvedores são versáteis.",
+          "justification": "A motivação é prática e técnica, não uma demonstração de versatilidade."
+        },
+        {
+          "text": "Para evitar reuniões longas de levantamento de requisitos.",
+          "justification": "Na verdade, pode demandar mais tempo, mas com muito mais qualidade de entendimento."
+        }
+      ],
+      "correctAnswer": "Para entender como o sistema será realmente usado e construir empatia e confiança com os usuários."
+    },
+    {
+      "id": 4,
+      "question": "De acordo com a Dica 55, qual é o verdadeiro desafio ao resolver um problema difícil?",
+      "options": [
+        {
+          "text": "Pensar de forma criativa completamente fora de qualquer limite.",
+          "justification": "O livro critica justamente essa ideia. 'Pensar fora da caixa' não é suficiente."
+        },
+        {
+          "text": "Encontrar a caixa — ou seja, identificar com precisão as restrições reais versus as imaginárias.",
+          "justification": "Correto! A solução está em saber quais restrições são absolutas e quais são apenas noções pré-concebidas."
+        },
+        {
+          "text": "Ignorar todas as restrições impostas pelo cliente.",
+          "justification": "Restrições absolutas devem ser respeitadas; apenas as ilusórias podem ser descartadas."
+        },
+        {
+          "text": "Buscar o algoritmo mais eficiente disponível na literatura acadêmica.",
+          "justification": "A seção trata de resolução criativa de problemas, não de eficiência algorítmica."
+        }
+      ],
+      "correctAnswer": "Encontrar a caixa — ou seja, identificar com precisão as restrições reais versus as imaginárias."
+    },
+    {
+      "id": 5,
+      "question": "Qual técnica o livro recomenda para distinguir bom senso de procrastinação ao hesitar antes de começar?",
+      "options": [
+        {
+          "text": "Pedir ao gerente de projeto que tome a decisão.",
+          "justification": "A responsabilidade de discernir entre hesitação válida e procrastinação é do próprio desenvolvedor."
+        },
+        {
+          "text": "Ignorar a dúvida e começar a codificar imediatamente para ganhar momentum.",
+          "justification": "O livro diz o oposto: dúvidas insistentes merecem atenção, não supressão."
+        },
+        {
+          "text": "Criar um protótipo para investigar a dúvida — se o tédio surgir logo, era procrastinação; se revelar um problema, o instinto estava certo.",
+          "justification": "Correto! O protótipo serve como sonda para validar ou dissipar a relutância."
+        },
+        {
+          "text": "Realizar uma pesquisa bibliográfica sobre o tema antes de qualquer ação.",
+          "justification": "O livro sugere ação prática (protótipo), não pesquisa teórica, para resolver a hesitação."
+        }
+      ],
+      "correctAnswer": "Criar um protótipo para investigar a dúvida — se o tédio surgir logo, era procrastinação; se revelar um problema, o instinto estava certo."
+    },
+    {
+      "id": 6,
+      "question": "Por que o livro afirma que especificações excessivamente detalhadas são uma 'camisa de força'?",
+      "options": [
+        {
+          "text": "Porque documentos longos são difíceis de imprimir.",
+          "justification": "O problema não é físico, mas conceitual: detalhe excessivo limita o julgamento do programador."
+        },
+        {
+          "text": "Porque eliminam a habilidade e o julgamento do programador, que não pode aproveitar oportunidades que surgem durante a codificação.",
+          "justification": "Correto! É na codificação que certas opções se tornam aparentes, e uma especificação rígida demais as bloqueia."
+        },
+        {
+          "text": "Porque especificações detalhadas aumentam o custo do projeto exponencialmente.",
+          "justification": "O livro não menciona custo exponencial; o problema é a perda de flexibilidade criativa."
+        },
+        {
+          "text": "Porque nenhum usuário consegue ler documentos com mais de 50 páginas.",
+          "justification": "O livro menciona que usuários assinam documentos longos sem entender, mas o problema central é outro."
+        }
+      ],
+      "correctAnswer": "Porque eliminam a habilidade e o julgamento do programador, que não pode aproveitar oportunidades que surgem durante a codificação."
+    },
+    {
+      "id": 7,
+      "question": "Qual é a visão pragmática sobre a relação entre especificação e implementação?",
+      "options": [
+        {
+          "text": "São etapas completamente separadas, cada uma com sua equipe dedicada.",
+          "justification": "O livro critica justamente essa separação artificial entre especificação e codificação."
+        },
+        {
+          "text": "A implementação deve sempre preceder a especificação para evitar desperdício.",
+          "justification": "O livro não inverte a ordem; ele pede que as duas fluam juntas, com feedback mútuo."
+        },
+        {
+          "text": "São facetas do mesmo processo: devem fluir uma para a outra com feedback mútuo, sem fronteiras artificiais.",
+          "justification": "Correto! Um processo saudável encoraja que o feedback da implementação alimente a especificação."
+        },
+        {
+          "text": "A especificação deve ser congelada antes de qualquer linha de código ser escrita.",
+          "justification": "Congelar a especificação é o modelo cascata que o livro desencoraja."
+        }
+      ],
+      "correctAnswer": "São facetas do mesmo processo: devem fluir uma para a outra com feedback mútuo, sem fronteiras artificiais."
+    },
+    {
+      "id": 8,
+      "question": "Qual é o principal problema dos métodos formais ao tentar verificar os requisitos com os usuários finais?",
+      "options": [
+        {
+          "text": "Os usuários finais geralmente não têm acesso a computadores para visualizar os diagramas.",
+          "justification": "O problema não é de acesso tecnológico, mas de interpretação."
+        },
+        {
+          "text": "Os diagramas frequentemente são irrelevantes para os usuários e ainda dependem da interpretação dos projetistas — sem verificação real.",
+          "justification": "Correto! Tudo ainda é baseado nas explicações dos projetistas, como nos antigos requisitos por escrito."
+        },
+        {
+          "text": "As ferramentas de diagramação são muito caras para a maioria das empresas.",
+          "justification": "O custo de ferramentas é mencionado de outra forma; aqui o problema é a dependência de interpretação humana."
+        },
+        {
+          "text": "Os métodos formais exigem que os usuários aprendam UML antes de participar.",
+          "justification": "O livro menciona que projetistas têm de explicar a notação, mas o problema central é a falta de verificação real."
+        }
+      ],
+      "correctAnswer": "Os diagramas frequentemente são irrelevantes para os usuários e ainda dependem da interpretação dos projetistas — sem verificação real."
+    },
+    {
+      "id": 9,
+      "question": "O que a Dica 53 ('Abstrações têm vida mais longa do que detalhes') nos ensina com o exemplo do bug do ano 2000?",
+      "options": [
+        {
+          "text": "Que programadores dos anos 1960 eram incompetentes e não pensavam no futuro.",
+          "justification": "O livro culpa analistas e projetistas, não programadores, e explica que era prática comum da época."
+        },
+        {
+          "text": "Que é impossível prever o futuro, portanto não devemos planejar além de 5 anos.",
+          "justification": "O livro não sugere limitação de planejamento, mas sim o uso de abstrações que sobrevivam às mudanças."
+        },
+        {
+          "text": "Que o sistema deveria ter usado uma abstração de DATA que 'soubesse' seu significado real, em vez de codificar a representação de dois dígitos diretamente.",
+          "justification": "Correto! Uma abstração bem definida teria isolado o detalhe de representação e evitado o problema."
+        },
+        {
+          "text": "Que bancos de dados relacionais são superiores a arquivos de texto para armazenar datas.",
+          "justification": "O argumento do livro é sobre abstração de software, não sobre o tipo de armazenamento."
+        }
+      ],
+      "correctAnswer": "Que o sistema deveria ter usado uma abstração de DATA que 'soubesse' seu significado real, em vez de codificar a representação de dois dígitos diretamente."
+    },
+    {
+      "id": 10,
+      "question": "Segundo o livro, como um programador pragmático deve tratar as metodologias formais?",
+      "options": [
+        {
+          "text": "Escolher a metodologia mais popular do mercado e segui-la à risca em todos os projetos.",
+          "justification": "O livro critica a adoção cega de metodologias, independentemente de qual seja."
+        },
+        {
+          "text": "Evitar completamente qualquer metodologia formal, pois todas causam mais problemas do que resolvem.",
+          "justification": "O livro reconhece valor nas metodologias; o problema é a escravidão a elas, não o uso em si."
+        },
+        {
+          "text": "Analisar criticamente cada metodologia, extrair o que há de melhor em cada uma e combiná-las em práticas de trabalho que melhorem continuamente.",
+          "justification": "Correto! Pragmatismo significa usar ferramentas com julgamento, nunca ser escravo delas."
+        },
+        {
+          "text": "Adotar a metodologia mais cara disponível, pois ferramentas caras produzem projetos melhores.",
+          "justification": "A Dica 59 diz exatamente o contrário: ferramentas caras não produzem projetos melhores."
+        }
+      ],
+      "correctAnswer": "Analisar criticamente cada metodologia, extrair o que há de melhor em cada uma e combiná-las em práticas de trabalho que melhorem continuamente."
+    }
+  ]
+}
