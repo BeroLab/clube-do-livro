@@ -2,7 +2,7 @@
 {
   "date": "30/03/2026",
   "book": "O Programador Pragmatico",
-  "topic": "Capítulo 7 - Antes do Projeto",
+  "topic": "Capítulo 7 - Antes do Projeto"
 }
 ---
 
