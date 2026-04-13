@@ -1,0 +1,236 @@
+{
+  "title": "Quiz: O Programador Pragmático – Encontro 18",
+  "description": "Avalie seus conhecimentos sobre Equipes Pragmáticas, Automação Onipresente e Testando Incansavelmente com base no Capítulo 8 do livro O Programador Pragmático.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Segundo o livro, qual é a postura correta de uma equipe pragmática em relação às 'janelas quebradas'?",
+      "options": [
+        {
+          "text": "A equipe deve tolerar pequenas falhas para não atrapalhar o cronograma.",
+          "justification": "Ignorar pequenas falhas acelera a deterioração do produto e do padrão da equipe."
+        },
+        {
+          "text": "A qualidade deve ficar sob responsabilidade de um único supervisor especializado.",
+          "justification": "O livro critica a ideia de delegar qualidade a uma pessoa só."
+        },
+        {
+          "text": "A equipe inteira deve assumir a responsabilidade pela qualidade e não tolerar pequenas imperfeições acumuladas.",
+          "justification": "Correto! Qualidade é um compromisso coletivo, não uma função isolada."
+        },
+        {
+          "text": "Só vale corrigir falhas pequenas quando o cliente reclamar delas formalmente.",
+          "justification": "Esperar reclamação externa é justamente o oposto da atitude pragmática."
+        }
+      ],
+      "correctAnswer": "A equipe inteira deve assumir a responsabilidade pela qualidade e não tolerar pequenas imperfeições acumuladas."
+    },
+    {
+      "id": 2,
+      "question": "Na metáfora do 'sapo cozido', o que uma equipe precisa fazer para não ser surpreendida?",
+      "options": [
+        {
+          "text": "Monitorar ativamente mudanças de escopo, prazo, ambiente e requisitos ao longo do projeto.",
+          "justification": "Correto! O perigo está nas mudanças graduais que passam despercebidas."
+        },
+        {
+          "text": "Evitar qualquer mudança no projeto, mesmo quando ela é necessária.",
+          "justification": "O livro não propõe rejeitar mudanças, mas sim enxergá-las claramente."
+        },
+        {
+          "text": "Deixar que apenas o gerente perceba mudanças importantes.",
+          "justification": "O monitoramento do ambiente deve ser uma preocupação visível para a equipe."
+        },
+        {
+          "text": "Aceitar toda solicitação nova sem discutir impacto.",
+          "justification": "Aceitar mudanças sem avaliar impacto é um caminho direto para ser 'cozido'."
+        }
+      ],
+      "correctAnswer": "Monitorar ativamente mudanças de escopo, prazo, ambiente e requisitos ao longo do projeto."
+    },
+    {
+      "id": 3,
+      "question": "O que a Dica 60 recomenda sobre a organização de equipes?",
+      "options": [
+        {
+          "text": "Separar rigidamente pessoas por cargo, como analistas, programadores e testadores, sem sobreposição.",
+          "justification": "O livro critica a segmentação rígida baseada no modelo cascata."
+        },
+        {
+          "text": "Organizar as equipes com base na funcionalidade, formando grupos pequenos e coesos responsáveis por partes do sistema.",
+          "justification": "Correto! A recomendação é estruturar equipes de forma funcional e ortogonal."
+        },
+        {
+          "text": "Centralizar toda decisão técnica em uma única equipe de arquitetura.",
+          "justification": "Isso tende a afastar quem implementa do contexto real do problema."
+        },
+        {
+          "text": "Dividir pessoas aleatoriamente para estimular criatividade.",
+          "justification": "A proposta do livro não é aleatoriedade, mas coesão funcional."
+        }
+      ],
+      "correctAnswer": "Organizar as equipes com base na funcionalidade, formando grupos pequenos e coesos responsáveis por partes do sistema."
+    },
+    {
+      "id": 4,
+      "question": "Por que o livro defende fortemente a automação em tarefas de projeto?",
+      "options": [
+        {
+          "text": "Porque automação elimina totalmente a necessidade de liderança técnica.",
+          "justification": "Automação ajuda o processo, mas não substitui liderança nem julgamento."
+        },
+        {
+          "text": "Porque scripts e ferramentas executam tarefas repetitivas com mais consistência e repetibilidade do que pessoas.",
+          "justification": "Correto! O foco está em reduzir erro humano e garantir repetição confiável."
+        },
+        {
+          "text": "Porque procedimentos manuais são proibidos em equipes pragmáticas.",
+          "justification": "O livro desencoraja fortemente procedimentos manuais, mas o argumento é prático, não dogmático."
+        },
+        {
+          "text": "Porque ambientes automatizados sempre produzem software sem bugs.",
+          "justification": "Automação reduz erros de processo, mas não garante ausência de defeitos."
+        }
+      ],
+      "correctAnswer": "Porque scripts e ferramentas executam tarefas repetitivas com mais consistência e repetibilidade do que pessoas."
+    },
+    {
+      "id": 5,
+      "question": "Segundo a Dica 61, qual prática deve ser evitada?",
+      "options": [
+        {
+          "text": "Gerar código e documentação automaticamente a partir de fontes únicas.",
+          "justification": "Isso é recomendado como forma de reduzir duplicação e inconsistência."
+        },
+        {
+          "text": "Usar construções noturnas para executar testes mais completos.",
+          "justification": "O livro trata builds noturnos como uma prática valiosa."
+        },
+        {
+          "text": "Depender de procedimentos manuais para tarefas recorrentes e importantes do projeto.",
+          "justification": "Correto! A Dica 61 diz explicitamente para não usar procedimentos manuais."
+        },
+        {
+          "text": "Versionar scripts de build e automação junto com o restante do projeto.",
+          "justification": "Versionar scripts é coerente com o espírito de repetibilidade defendido no capítulo."
+        }
+      ],
+      "correctAnswer": "Depender de procedimentos manuais para tarefas recorrentes e importantes do projeto."
+    },
+    {
+      "id": 6,
+      "question": "Qual é a principal vantagem de um build noturno automatizado, segundo o texto?",
+      "options": [
+        {
+          "text": "Ele elimina a necessidade de testes locais feitos por desenvolvedores.",
+          "justification": "Build noturno complementa testes frequentes; não substitui a responsabilidade local."
+        },
+        {
+          "text": "Ele serve apenas para empacotar a versão final do produto.",
+          "justification": "O build noturno é mais amplo e contínuo, não apenas uma etapa final."
+        },
+        {
+          "text": "Ele permite identificar regressões e falhas perto da origem, quando ainda é mais fácil corrigi-las.",
+          "justification": "Correto! Encontrar problemas cedo reduz drasticamente o custo de investigação e correção."
+        },
+        {
+          "text": "Ele garante que o software já esteja pronto para entrega ao cliente todas as manhãs.",
+          "justification": "Build frequente ajuda a qualidade, mas não garante prontidão automática para entrega."
+        }
+      ],
+      "correctAnswer": "Ele permite identificar regressões e falhas perto da origem, quando ainda é mais fácil corrigi-las."
+    },
+    {
+      "id": 7,
+      "question": "O que a Dica 62 resume sobre a postura pragmática em relação a testes?",
+      "options": [
+        {
+          "text": "Teste cedo, teste sempre e teste automaticamente.",
+          "justification": "Correto! Essa é a formulação direta da Dica 62."
+        },
+        {
+          "text": "Teste apenas quando o código estiver completamente estável.",
+          "justification": "Esperar estabilidade atrasa a descoberta de erros e aumenta seu custo."
+        },
+        {
+          "text": "Teste manualmente sempre que possível, pois automação mascara falhas reais.",
+          "justification": "O livro defende justamente o contrário: automação amplia a eficácia dos testes."
+        },
+        {
+          "text": "Teste só os pontos mais arriscados para economizar tempo.",
+          "justification": "A atitude pragmática é construir uma rede ampla, não testar só o que parece óbvio."
+        }
+      ],
+      "correctAnswer": "Teste cedo, teste sempre e teste automaticamente."
+    },
+    {
+      "id": 8,
+      "question": "Quando o livro considera que a codificação está realmente concluída?",
+      "options": [
+        {
+          "text": "Quando o desenvolvedor termina de implementar a funcionalidade principal.",
+          "justification": "Implementar não basta; ainda falta provar que o código pode ser usado com segurança."
+        },
+        {
+          "text": "Quando o cliente aprova visualmente a interface do sistema.",
+          "justification": "Aprovação visual não substitui execução sistemática de testes."
+        },
+        {
+          "text": "Quando o código compila sem warnings em modo de produção.",
+          "justification": "Compilar é necessário, mas não suficiente para considerar o trabalho concluído."
+        },
+        {
+          "text": "Quando todos os testes disponíveis foram executados e passaram.",
+          "justification": "Correto! A Dica 63 afirma que codificação só termina depois da passagem pelos testes."
+        }
+      ],
+      "correctAnswer": "Quando todos os testes disponíveis foram executados e passaram."
+    },
+    {
+      "id": 9,
+      "question": "Qual afirmação descreve melhor a diferença entre cobertura de código e cobertura de estados?",
+      "options": [
+        {
+          "text": "Cobertura de código mede linhas executadas; cobertura de estados considera os diferentes cenários lógicos que o programa pode assumir.",
+          "justification": "Correto! O livro alerta que executar linhas não garante explorar todos os estados relevantes."
+        },
+        {
+          "text": "Cobertura de estados só se aplica a interfaces gráficas, enquanto cobertura de código vale para back-end.",
+          "justification": "Essa distinção não aparece no livro e está incorreta."
+        },
+        {
+          "text": "Cobertura de código é sempre suficiente, desde que alcance 100%.",
+          "justification": "O capítulo rejeita essa ideia e mostra que estados problemáticos podem continuar escondidos."
+        },
+        {
+          "text": "Cobertura de estados é apenas outro nome para teste de integração.",
+          "justification": "São conceitos diferentes: um trata de espaço lógico de execução, outro de interação entre partes."
+        }
+      ],
+      "correctAnswer": "Cobertura de código mede linhas executadas; cobertura de estados considera os diferentes cenários lógicos que o programa pode assumir."
+    },
+    {
+      "id": 10,
+      "question": "O que a Dica 66 quer dizer com 'Encontre os erros apenas uma vez'?",
+      "options": [
+        {
+          "text": "Que cada erro deve ser corrigido rapidamente, mas não precisa virar teste se for trivial.",
+          "justification": "O livro diz o oposto: mesmo erros triviais devem entrar na rede automatizada."
+        },
+        {
+          "text": "Que um erro encontrado manualmente deve gerar um novo teste automatizado para impedir que escape novamente.",
+          "justification": "Correto! O defeito descoberto hoje precisa virar proteção permanente para o futuro."
+        },
+        {
+          "text": "Que o time deve evitar registrar bugs repetidos no rastreador para não poluir relatórios.",
+          "justification": "A dica trata de ampliar o conjunto de testes, não de gestão de tickets."
+        },
+        {
+          "text": "Que somente erros encontrados por usuários finais merecem novos testes automatizados.",
+          "justification": "Qualquer erro que escape da rede atual deve reforçá-la dali em diante."
+        }
+      ],
+      "correctAnswer": "Que um erro encontrado manualmente deve gerar um novo teste automatizado para impedir que escape novamente."
+    }
+  ]
+}
