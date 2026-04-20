@@ -1,0 +1,236 @@
+{
+  "title": "Quiz: O Programador Pragmático – Encontro 19",
+  "description": "Avalie seus conhecimentos sobre Tudo se Resume a Escrever, Grandes Expectativas e Orgulho e Preconceito com base no Capítulo 8 do livro O Programador Pragmático.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "O que a Dica 67 propõe sobre a documentação?",
+      "options": [
+        {
+          "text": "Que a documentação deve ser produzida por redatores técnicos, não por programadores.",
+          "justification": "O livro propõe o oposto: programadores devem ser responsáveis pela documentação interna."
+        },
+        {
+          "text": "Que o português deve ser tratado simplesmente como outra linguagem de programação.",
+          "justification": "Correto! A dica propõe aplicar à documentação os mesmos cuidados e princípios do código."
+        },
+        {
+          "text": "Que documentação só é necessária em projetos grandes e com múltiplas equipes.",
+          "justification": "O livro não condiciona a necessidade de documentação ao tamanho do projeto."
+        },
+        {
+          "text": "Que toda documentação deve ser escrita antes do código, como uma especificação formal.",
+          "justification": "Essa abordagem não é a proposta pelo livro, que prefere documentação integrada ao código."
+        }
+      ],
+      "correctAnswer": "Que o português deve ser tratado simplesmente como outra linguagem de programação."
+    },
+    {
+      "id": 2,
+      "question": "Segundo o livro, quando código e documentação entram em conflito, qual prevalece?",
+      "options": [
+        {
+          "text": "A documentação, pois representa a intenção original do projeto.",
+          "justification": "O livro é explícito: o código é o que importa, para o bem ou para o mal."
+        },
+        {
+          "text": "Depende do tipo de documento: manuais externos prevalecem sobre o código.",
+          "justification": "O livro não faz essa distinção. Em qualquer caso, o código é a fonte de verdade."
+        },
+        {
+          "text": "O código, pois ele é a representação real do que o sistema faz.",
+          "justification": "Correto! Se houver discrepância, o código é o que importa."
+        },
+        {
+          "text": "Nenhum prevalece; ambos devem ser corrigidos ao mesmo tempo.",
+          "justification": "O livro não sugere tratar os dois como igualmente autoritativos — o código tem precedência."
+        }
+      ],
+      "correctAnswer": "O código, pois ele é a representação real do que o sistema faz."
+    },
+    {
+      "id": 3,
+      "question": "Qual é a principal função dos comentários no código, segundo os autores?",
+      "options": [
+        {
+          "text": "Descrever o que o código faz linha a linha para facilitar a leitura.",
+          "justification": "Comentar o 'quê' é redundante com o próprio código e viola o princípio NSR."
+        },
+        {
+          "text": "Listar as funções exportadas e os arquivos que o módulo utiliza.",
+          "justification": "O livro diz explicitamente que essas informações não devem aparecer em comentários."
+        },
+        {
+          "text": "Registrar o histórico de revisões e quem alterou o arquivo.",
+          "justification": "Histórico de revisões pertence ao sistema de controle de código-fonte, não a comentários."
+        },
+        {
+          "text": "Explicar o porquê de algo ser feito, decisões de engenharia e alternativas descartadas.",
+          "justification": "Correto! Comentários devem registrar o raciocínio por trás do código, não o que ele já mostra."
+        }
+      ],
+      "correctAnswer": "Explicar o porquê de algo ser feito, decisões de engenharia e alternativas descartadas."
+    },
+    {
+      "id": 4,
+      "question": "O que são 'documentos executáveis' no contexto do livro?",
+      "options": [
+        {
+          "text": "Documentos que só podem ser lidos por ferramentas automatizadas, não por pessoas.",
+          "justification": "Documentos executáveis são legíveis por pessoas e também processáveis por ferramentas."
+        },
+        {
+          "text": "Documentos que servem de fonte única de verdade e geram automaticamente outras representações, como esquemas e registros.",
+          "justification": "Correto! A ideia é ter uma fonte autoritativa que exporta diferentes visualizações automaticamente."
+        },
+        {
+          "text": "Scripts de build que também funcionam como documentação do processo.",
+          "justification": "A ideia é mais ampla: qualquer documento que sirva de modelo para gerar outros artefatos."
+        },
+        {
+          "text": "Arquivos de configuração que documentam o ambiente de produção.",
+          "justification": "Essa é uma leitura muito restrita do conceito apresentado no livro."
+        }
+      ],
+      "correctAnswer": "Documentos que servem de fonte única de verdade e geram automaticamente outras representações, como esquemas e registros."
+    },
+    {
+      "id": 5,
+      "question": "Por que o livro recomenda preferir documentação publicada na Web em vez de impressa?",
+      "options": [
+        {
+          "text": "Porque documentação impressa tem custo mais alto de produção.",
+          "justification": "O argumento central do livro é sobre atualização, não sobre custo de impressão."
+        },
+        {
+          "text": "Porque documentação impressa fica desatualizada assim que é impressa e é mais difícil de manter.",
+          "justification": "Correto! Publicação online facilita atualizações e alcança mais pessoas com menos esforço."
+        },
+        {
+          "text": "Porque a Web permite incluir código executável diretamente na documentação.",
+          "justification": "Essa vantagem não é o argumento usado no trecho lido."
+        },
+        {
+          "text": "Porque usuários modernos se recusam a ler documentação em papel.",
+          "justification": "O livro não menciona preferências do usuário como argumento para essa recomendação."
+        }
+      ],
+      "correctAnswer": "Porque documentação impressa fica desatualizada assim que é impressa e é mais difícil de manter."
+    },
+    {
+      "id": 6,
+      "question": "O que o livro quer dizer com a Dica 69: 'Exceda gentilmente as expectativas de seus usuários'?",
+      "options": [
+        {
+          "text": "Entregar bem mais do que foi prometido para impressionar a gestão.",
+          "justification": "O livro avisa que exceder demais as expectativas também é uma forma de fracasso."
+        },
+        {
+          "text": "Surpreender positivamente com pequenos recursos extras que demonstram cuidado com a experiência do usuário.",
+          "justification": "Correto! O objetivo é encantar sem assustar, com esforço adicional pequeno e bem direcionado."
+        },
+        {
+          "text": "Ignorar as expectativas dos usuários e focar apenas na qualidade técnica do sistema.",
+          "justification": "O livro é explícito: as expectativas dos usuários são centrais para o sucesso do projeto."
+        },
+        {
+          "text": "Prometer menos do que será entregue para garantir uma boa impressão na entrega.",
+          "justification": "Essa estratégia não é o que o livro propõe; o foco está em comunicação honesta e surpresas positivas."
+        }
+      ],
+      "correctAnswer": "Surpreender positivamente com pequenos recursos extras que demonstram cuidado com a experiência do usuário."
+    },
+    {
+      "id": 7,
+      "question": "Como o livro descreve o papel do desenvolvedor na relação com as expectativas dos usuários?",
+      "options": [
+        {
+          "text": "Controlar ativamente o que o usuário pode esperar, definindo limites rígidos desde o início.",
+          "justification": "O livro critica essa postura 'elitista' de gerenciamento de expectativas."
+        },
+        {
+          "text": "Ignorar expectativas iniciais e focar apenas no escopo formal do contrato.",
+          "justification": "O livro diz que as expectativas dos usuários, mesmo informais, não podem ser ignoradas."
+        },
+        {
+          "text": "Trabalhar em parceria com os usuários para construir um entendimento compartilhado durante todo o desenvolvimento.",
+          "justification": "Correto! O livro prefere colaboração contínua ao controle unilateral de expectativas."
+        },
+        {
+          "text": "Delegar a comunicação de expectativas exclusivamente ao gerente de projeto.",
+          "justification": "O livro posiciona a equipe inteira como responsável por essa comunicação."
+        }
+      ],
+      "correctAnswer": "Trabalhar em parceria com os usuários para construir um entendimento compartilhado durante todo o desenvolvimento."
+    },
+    {
+      "id": 8,
+      "question": "Qual dos itens abaixo é citado no livro como exemplo de recurso pequeno que pode encantar usuários?",
+      "options": [
+        {
+          "text": "Reescrever o sistema em uma linguagem mais moderna.",
+          "justification": "Isso não é um recurso 'pequeno' e não está na lista de exemplos do livro."
+        },
+        {
+          "text": "Adicionar testes automatizados cobrindo 100% do código.",
+          "justification": "Cobertura de testes não aparece na lista de recursos orientados ao usuário mencionados."
+        },
+        {
+          "text": "Atalhos no teclado e dicas de ferramentas (tooltips).",
+          "justification": "Correto! São exemplos diretos do livro de recursos simples que demonstram cuidado com o usuário."
+        },
+        {
+          "text": "Migrar o banco de dados para uma versão mais recente.",
+          "justification": "Isso é infraestrutura interna, não um recurso orientado à experiência do usuário."
+        }
+      ],
+      "correctAnswer": "Atalhos no teclado e dicas de ferramentas (tooltips)."
+    },
+    {
+      "id": 9,
+      "question": "Por que o anonimato em grandes projetos é visto como problemático pelo livro?",
+      "options": [
+        {
+          "text": "Porque dificulta o rastreamento de quem deve receber crédito pelas funcionalidades entregues.",
+          "justification": "O livro foca em responsabilidade e qualidade, não em reconhecimento de crédito."
+        },
+        {
+          "text": "Porque cria um ambiente propício ao desleixo, erros e código ruim, já que ninguém se sente dono do resultado.",
+          "justification": "Correto! Sem senso de autoria, é fácil se esconder atrás de desculpas e padrões baixos."
+        },
+        {
+          "text": "Porque impede que o gerente identifique gargalos individuais de produtividade.",
+          "justification": "A preocupação do livro é com qualidade e responsabilidade, não com métricas gerenciais."
+        },
+        {
+          "text": "Porque viola normas legais de autoria de software em muitos países.",
+          "justification": "O livro não menciona aspectos legais como motivação para essa preocupação."
+        }
+      ],
+      "correctAnswer": "Porque cria um ambiente propício ao desleixo, erros e código ruim, já que ninguém se sente dono do resultado."
+    },
+    {
+      "id": 10,
+      "question": "O que a Dica 70 ('Assine seu trabalho') implica sobre a postura do programador pragmático?",
+      "options": [
+        {
+          "text": "Que o programador deve defender seu código contra qualquer alteração feita por outras pessoas.",
+          "justification": "O livro alerta explicitamente contra o territorialismo e a defesa ciosa do próprio código."
+        },
+        {
+          "text": "Que apenas o código publicado externamente merece ser assinado e reconhecido.",
+          "justification": "A dica se aplica a todo trabalho, não apenas ao que é exposto ao mundo externo."
+        },
+        {
+          "text": "Que o programador deve assumir responsabilidade pelo seu trabalho e fazê-lo com qualidade suficiente para se orgulhar de assinar.",
+          "justification": "Correto! A assinatura é um símbolo de responsabilidade e padrão profissional, não de posse."
+        },
+        {
+          "text": "Que o nome do autor deve aparecer obrigatoriamente em todos os comentários de cabeçalho do código.",
+          "justification": "A dica trata de postura e responsabilidade, não de um requisito técnico de formatação."
+        }
+      ],
+      "correctAnswer": "Que o programador deve assumir responsabilidade pelo seu trabalho e fazê-lo com qualidade suficiente para se orgulhar de assinar."
+    }
+  ]
+}
